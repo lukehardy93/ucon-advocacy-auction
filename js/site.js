@@ -23,6 +23,37 @@
     });
   }
 
+  /* ---- Desktop "About" dropdown ----
+     CSS handles hover/focus-within already; this adds click-to-toggle for
+     touch devices and closes the menu on outside click or Escape. ---- */
+  document.querySelectorAll(".nav-dropdown").forEach(function (dd) {
+    var toggle = dd.querySelector(".nav-dropdown-toggle");
+    if (!toggle) return;
+    toggle.addEventListener("click", function (e) {
+      e.stopPropagation();
+      var isOpen = dd.classList.toggle("open");
+      toggle.setAttribute("aria-expanded", isOpen ? "true" : "false");
+    });
+  });
+  document.addEventListener("click", function (e) {
+    document.querySelectorAll(".nav-dropdown.open").forEach(function (dd) {
+      if (!dd.contains(e.target)) {
+        dd.classList.remove("open");
+        var t = dd.querySelector(".nav-dropdown-toggle");
+        if (t) t.setAttribute("aria-expanded", "false");
+      }
+    });
+  });
+  document.addEventListener("keydown", function (e) {
+    if (e.key === "Escape") {
+      document.querySelectorAll(".nav-dropdown.open").forEach(function (dd) {
+        dd.classList.remove("open");
+        var t = dd.querySelector(".nav-dropdown-toggle");
+        if (t) t.setAttribute("aria-expanded", "false");
+      });
+    }
+  });
+
   /* ---- Mark current-page nav links (belt-and-suspenders on top of the
      server-authored "active" class) ---- */
   var here = location.pathname.split("/").pop() || "index.html";
