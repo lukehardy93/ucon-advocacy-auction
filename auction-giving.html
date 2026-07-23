@@ -26,9 +26,10 @@
 <style>
 /* ---------- page-scoped additions, prefixed .giv- per brief ---------- */
 .giv-item-note{font-size:15px;color:var(--mut);max-width:680px;margin-top:10px;}
-.giv-donate-inner{display:flex;flex-direction:column;gap:22px;align-items:flex-start;max-width:720px;}
+.giv-donate-inner{display:flex;flex-direction:column;gap:22px;align-items:flex-start;max-width:720px;margin-top:40px;}
+.giv-form-btns{display:flex;flex-wrap:wrap;gap:14px;justify-content:center;}
 .giv-donate-cta{display:inline-flex;align-items:center;gap:10px;}
-.giv-form-embed{width:100%;max-width:520px;background:var(--paper);border:1px solid var(--lineDark);border-radius:12px;padding:32px;display:flex;flex-direction:column;align-items:center;gap:14px;text-align:center;box-shadow:var(--shadow-sm);}
+.giv-form-embed{width:100%;max-width:640px;background:var(--paper);border:1px solid var(--lineDark);border-radius:12px;padding:32px;display:flex;flex-direction:column;align-items:center;gap:18px;text-align:center;box-shadow:var(--shadow-sm);}
 .giv-form-embed i{font-size:26px;color:var(--goldD);}
 .giv-form-embed p{margin:0;font-size:15px;color:var(--ink2);max-width:380px;}
 .giv-ideas{margin-top:32px;max-width:900px;}
@@ -42,6 +43,14 @@
 </head>
 <body>
 <a href="#main-content" class="skip-link">Skip to main content</a>
+<div class="presented-by-bar">
+  <div class="container presented-by-inner">
+    <span>Presented by</span>
+    <a href="https://www.unitedcontractors.org" target="_blank" rel="noopener" aria-label="United Contractors (UCON) website">
+      <img src="https://res.cloudinary.com/dhqtiaubo/image/upload/f_auto,q_auto,w_120/v1784826013/UnitedContractorsLogo_zf9ekd_ietzxc.png" alt="United Contractors (UCON)" loading="lazy">
+    </a>
+  </div>
+</div>
 <header id="site-header">
   <nav>
     <a href="index.html" class="nav-logo" aria-label="2026 UCON Advocacy Auction home">
@@ -360,13 +369,15 @@
         <div class="giv-form-embed">
           <i class="fa-solid fa-file-pdf" aria-hidden="true"></i>
           <p>Download and fill out the 2026 Item Donation Form, then email it back to us.</p>
-          <a href="https://res.cloudinary.com/dhqtiaubo/image/upload/v1784824076/2026_Personal_Item_Donation_Form_-_Fillable_bsdbbn.pdf" target="_blank" rel="noopener" class="btn btn-primary giv-donate-cta">
-            <i class="fa-solid fa-download" aria-hidden="true"></i> Download the Donation Form
-          </a>
+          <div class="giv-form-btns">
+            <a href="https://res.cloudinary.com/dhqtiaubo/image/upload/v1784824076/2026_Personal_Item_Donation_Form_-_Fillable_bsdbbn.pdf" target="_blank" rel="noopener" class="btn btn-primary giv-donate-cta">
+              <i class="fa-solid fa-download" aria-hidden="true"></i> Download the Donation Form
+            </a>
+            <a href="mailto:events@unitedcontractors.org?subject=2026%20Advocacy%20Auction%20-%20Item%20Donation" class="btn btn-outline giv-donate-cta">
+              <i class="fa-solid fa-envelope" aria-hidden="true"></i> Email Us to Donate an Item
+            </a>
+          </div>
         </div>
-        <a href="mailto:events@unitedcontractors.org?subject=2026%20Advocacy%20Auction%20-%20Item%20Donation" class="btn btn-outline giv-donate-cta">
-          <i class="fa-solid fa-envelope" aria-hidden="true"></i> Email Us to Donate an Item
-        </a>
       </div>
     </div>
   </section>
@@ -416,6 +427,7 @@
   <div class="container">
     <div class="footer-grid">
       <div class="footer-brand">
+        <img class="footer-ucon-logo" src="https://res.cloudinary.com/dhqtiaubo/image/upload/f_auto,q_auto,w_200/v1784826013/UnitedContractorsLogo_zf9ekd_ietzxc.png" alt="United Contractors (UCON) logo" loading="lazy">
         <h3>2026 Advocacy Auction</h3>
         <p class="script" style="font-size:22px;color:var(--gold);">Among the Lanterns</p>
         <p>Saturday, November 7, 2026 &middot; 5:00 PM &ndash; Midnight PST<br>Claremont Club &amp; Spa, Berkeley, CA</p>
