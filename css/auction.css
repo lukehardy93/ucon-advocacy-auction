@@ -449,7 +449,8 @@ footer{background:var(--teal);color:#B7B09C;padding:60px 0 28px;border-top:1px s
 }
 
 /* ---------- PHOTO GALLERY + LIGHTBOX (2025 recap) ---------- */
-.photo-mosaic{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;margin-top:36px;background:var(--line);border:1px solid var(--line);}
+.photo-mosaic{display:grid;grid-template-columns:repeat(3,1fr);grid-auto-flow:dense;gap:1px;margin-top:36px;background:var(--line);border:1px solid var(--line);}
+.photo-mosaic.mini{grid-template-columns:repeat(2,1fr);}
 .p-tile{position:relative;aspect-ratio:4/3;overflow:hidden;border:none;background:var(--cream2);padding:0;cursor:pointer;display:block;}
 .p-tile img{width:100%;height:100%;object-fit:cover;object-position:center 30%;display:block;transition:transform .4s ease;}
 .p-tile:hover img{transform:scale(1.05);}
@@ -462,6 +463,7 @@ footer{background:var(--teal);color:#B7B09C;padding:60px 0 28px;border-top:1px s
 }
 @media(max-width:480px){
   .photo-mosaic{grid-template-columns:1fr;}
+  .photo-mosaic.mini{grid-template-columns:1fr;}
   .p-tile.wide{grid-column:span 1;}
 }
 
