@@ -3,16 +3,16 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Sponsor an Item | 2026 UCON Advocacy Auction | Among the Lanterns</title>
+<title>Donate an Item | 2026 UCON Advocacy Auction | Among the Lanterns</title>
 <meta name="description" content="Browse the 2026 UCON Advocacy Auction's live and silent auction items, plus how to donate an item or experience.">
 <!-- TODO once a domain is live: add <link rel="canonical" href="https://REPLACE-WITH-DOMAIN/auction-giving.html"> and set og:url below -->
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="2026 UCON Advocacy Auction">
-<meta property="og:title" content="Sponsor an Item | 2026 UCON Advocacy Auction">
+<meta property="og:title" content="Donate an Item | 2026 UCON Advocacy Auction">
 <meta property="og:description" content="Browse the 2026 UCON Advocacy Auction's live and silent auction items, plus how to donate an item or experience.">
 <meta property="og:image" content="https://res.cloudinary.com/dhqtiaubo/image/upload/f_auto,q_auto,w_1200/v1784321325/UCON-2025-Advocacy-Auction-201-2473_n0xrlq.jpg">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Sponsor an Item | 2026 UCON Advocacy Auction">
+<meta name="twitter:title" content="Donate an Item | 2026 UCON Advocacy Auction">
 <meta name="twitter:description" content="Browse the live and silent auction items, and how to donate an item.">
 <meta name="twitter:image" content="https://res.cloudinary.com/dhqtiaubo/image/upload/f_auto,q_auto,w_1200/v1784321325/UCON-2025-Advocacy-Auction-201-2473_n0xrlq.jpg">
 <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
@@ -28,6 +28,13 @@
 .giv-item-note{font-size:15px;color:var(--mut);max-width:680px;margin-top:10px;}
 .giv-donate-inner{display:flex;flex-direction:column;gap:22px;align-items:flex-start;max-width:720px;}
 .giv-donate-cta{display:inline-flex;align-items:center;gap:10px;}
+.giv-form-embed{width:100%;max-width:520px;background:var(--paper);border:1px solid var(--lineDark);border-radius:12px;padding:32px;display:flex;flex-direction:column;align-items:center;gap:14px;text-align:center;box-shadow:var(--shadow-sm);}
+.giv-form-embed i{font-size:26px;color:var(--goldD);}
+.giv-form-embed p{margin:0;font-size:15px;color:var(--ink2);max-width:380px;}
+.giv-ideas{margin-top:32px;max-width:900px;}
+.giv-ideas h4{font-family:var(--font-head);font-size:17px;font-weight:700;margin-bottom:14px;}
+.giv-idea-chips{display:flex;flex-wrap:wrap;gap:10px;}
+.giv-idea-chip{background:var(--paper);border:1px solid var(--lineDark);border-radius:999px;padding:8px 16px;font-family:var(--font-body);font-size:13px;color:var(--ink2);}
 .giv-atmo-figure{margin:40px 0 0;border:1px solid var(--line);background:var(--paper);max-width:560px;}
 .giv-atmo-figure img{display:block;width:100%;height:auto;max-height:380px;object-fit:cover;}
 .giv-atmo-figure figcaption{padding:14px 20px;font-family:var(--font-body);font-weight:300;font-size:13px;font-style:italic;color:var(--mut);border-top:1px solid var(--line);}
@@ -52,10 +59,11 @@
     </a>
     <div class="nav-links">
       <div class="nav-item"><a href="index.html" class="nav-btn">Home</a></div>
+      <div class="nav-item"><a href="impact.html" class="nav-btn">Our Impact</a></div>
       <div class="nav-item"><a href="tickets.html" class="nav-btn">Tickets &amp; Registration</a></div>
       <div class="nav-item"><a href="sponsorship.html" class="nav-btn">Event Sponsorship</a></div>
       <div class="nav-item nav-dropdown">
-        <a href="auction-giving.html" class="nav-btn nav-dropdown-toggle active" aria-haspopup="true" aria-expanded="false">Sponsor an Item<span class="nav-dropdown-chev-btn" role="button" tabindex="0" aria-label="Toggle Sponsor an Item submenu" aria-expanded="false"><i class="fa-solid fa-chevron-down nav-dropdown-chev" aria-hidden="true"></i></span></a>
+        <a href="auction-giving.html" class="nav-btn nav-dropdown-toggle active" aria-haspopup="true" aria-expanded="false">Donate an Item<span class="nav-dropdown-chev-btn" role="button" tabindex="0" aria-label="Toggle Donate an Item submenu" aria-expanded="false"><i class="fa-solid fa-chevron-down nav-dropdown-chev" aria-hidden="true"></i></span></a>
         <div class="nav-dropdown-menu">
           <a href="auction-giving.html#silent-auction">Silent Auction</a>
           <a href="auction-giving.html#live-auction">Live Auction</a>
@@ -78,9 +86,10 @@
   </nav>
   <div class="mobile-menu" id="mobileMenu">
     <a href="index.html">Home</a>
+    <a href="impact.html">Our Impact</a>
     <a href="tickets.html">Tickets &amp; Registration</a>
     <a href="sponsorship.html">Event Sponsorship</a>
-    <a href="auction-giving.html" class="mobile-menu-label">Sponsor an Item</a>
+    <a href="auction-giving.html" class="mobile-menu-label">Donate an Item</a>
     <a href="auction-giving.html#silent-auction">Silent Auction</a>
     <a href="auction-giving.html#live-auction">Live Auction</a>
     <a href="event-info.html">Event Info</a>
@@ -102,8 +111,8 @@
     <div class="page-hero-glow b" aria-hidden="true"></div>
     <div class="page-hero-content">
       <span class="eyebrow script">Bid, Bet, Give</span>
-      <h1>Sponsor an Item</h1>
-      <p>Every paddle raise and winning bid at Among the Lanterns helps power UCON's Government Advocacy program. Our silent and live auctions are a cornerstone of a night that aims to raise over $400,000 to champion the voice of union contractors.</p>
+      <h1>Donate an Item</h1>
+      <p>Every paddle raise and winning bid at Among the Lanterns helps power UCON's Government Advocacy program. Our silent and live auctions are a cornerstone of a night that aims to raise over $400,000 to champion the voice of union contractors. The packages below are pre-packaged items: each has a set purchase price, so you know exactly what you're contributing to claim it.</p>
     </div>
   </section>
 
@@ -112,7 +121,7 @@
     <div class="container">
       <div class="section-label"><span class="dot"></span><span>Live Auction</span></div>
       <h2 class="section-title">Live Auction Items</h2>
-      <p class="section-sub">An early look at the marquee getaways, experiences, and one-of-a-kind packages up for bid live during dinner. Final selections and package details will be confirmed closer to the event.</p>
+      <p class="section-sub">An early look at the marquee getaways, experiences, and one-of-a-kind pre-packaged items available to claim live during dinner at the listed purchase price. Final selections and package details will be confirmed closer to the event.</p>
       <div class="item-grid">
         <div class="item-card">
           <div class="thumb"><i class="fa-solid fa-champagne-glasses" aria-hidden="true"></i></div>
@@ -208,7 +217,7 @@
     <div class="container">
       <div class="section-label"><span class="dot"></span><span>Silent Auction</span></div>
       <h2 class="section-title">Silent Auction Items</h2>
-      <p class="section-sub">An early shortlist of items under consideration for the 2026 silent auction. Final selections, quantities, and additional items will be confirmed closer to the event.</p>
+      <p class="section-sub">An early shortlist of pre-packaged items under consideration for the 2026 silent auction, each with a set purchase price. Final selections, quantities, and additional items will be confirmed closer to the event.</p>
       <div class="item-grid">
         <div class="item-card">
           <div class="thumb"><i class="fa-solid fa-whiskey-glass" aria-hidden="true"></i></div>
@@ -314,14 +323,48 @@
   <section class="tint-gold">
     <div class="container">
       <div class="section-label"><span class="dot"></span><span>Get Involved</span></div>
-      <h2 class="section-title">Donate an Item or Experience</h2>
-      <p class="section-sub">Have a getaway, experience, or one-of-a-kind item to contribute to the auction? Every donation helps power UCON's Government Advocacy program.</p>
-      <div class="giv-donate-inner">
-        <div class="note-box" style="margin-top:0;">
-          <h4>Donation Details Coming Soon</h4>
-          <p>Our 2026 item-donation form isn't live yet. In the meantime, we'd still love to hear from you: email the UCON events team directly at <a href="mailto:events@unitedcontractors.org">events@unitedcontractors.org</a> and we'll get you set up.</p>
+      <h2 class="section-title">Donate a Personal Item or Experience</h2>
+      <p class="section-sub">The packages above are already pre-arranged, but if you have a getaway, experience, or one-of-a-kind item of your own to contribute, we'd love to include it. Every donation helps power UCON's Government Advocacy program.</p>
+
+      <div class="giv-ideas">
+        <h4>Some of Our Most Popular Donations Have Included</h4>
+        <div class="giv-idea-chips">
+          <span class="giv-idea-chip">Vacation trips (Hawaii, Disneyland, Mexico, and more)</span>
+          <span class="giv-idea-chip">Cabins &amp; vacation homes (lake, beach, mountain, river)</span>
+          <span class="giv-idea-chip">Sports tickets / luxury suites</span>
+          <span class="giv-idea-chip">Golf outings to private clubs</span>
+          <span class="giv-idea-chip">Dinner experiences at personal homes (bocce, poker, wine cellar)</span>
+          <span class="giv-idea-chip">Private airplane access</span>
+          <span class="giv-idea-chip">Tickets from a major airline carrier</span>
+          <span class="giv-idea-chip">Stylish luggage</span>
+          <span class="giv-idea-chip">Winemaker tour &amp; tastings</span>
+          <span class="giv-idea-chip">Tickets to a popular talk show</span>
+          <span class="giv-idea-chip">One-week timeshare</span>
+          <span class="giv-idea-chip">Hot air balloon ride</span>
+          <span class="giv-idea-chip">Helicopter ride</span>
+          <span class="giv-idea-chip">Mountain passes and ski / snowboard lessons</span>
+          <span class="giv-idea-chip">Canoe or kayaking family trip</span>
+          <span class="giv-idea-chip">White water rafting trip</span>
+          <span class="giv-idea-chip">Private boat cruise with cocktails</span>
+          <span class="giv-idea-chip">Behind-the-scenes or VIP insider tour</span>
+          <span class="giv-idea-chip">Broadway / Off-Broadway shows</span>
+          <span class="giv-idea-chip">Classic jewelry</span>
+          <span class="giv-idea-chip">Spa packages</span>
+          <span class="giv-idea-chip">Special / unique experiences</span>
+          <span class="giv-idea-chip">Adventure excursions</span>
+          <span class="giv-idea-chip">Sporting items</span>
         </div>
-        <a href="mailto:events@unitedcontractors.org?subject=2026%20Advocacy%20Auction%20-%20Item%20Donation" class="btn btn-primary giv-donate-cta">
+      </div>
+
+      <div class="giv-donate-inner">
+        <div class="giv-form-embed">
+          <i class="fa-solid fa-file-pdf" aria-hidden="true"></i>
+          <p>Download and fill out the 2026 Item Donation Form, then email it back to us.</p>
+          <a href="https://res.cloudinary.com/dhqtiaubo/image/upload/v1784824076/2026_Personal_Item_Donation_Form_-_Fillable_bsdbbn.pdf" target="_blank" rel="noopener" class="btn btn-primary giv-donate-cta">
+            <i class="fa-solid fa-download" aria-hidden="true"></i> Download the Donation Form
+          </a>
+        </div>
+        <a href="mailto:events@unitedcontractors.org?subject=2026%20Advocacy%20Auction%20-%20Item%20Donation" class="btn btn-outline giv-donate-cta">
           <i class="fa-solid fa-envelope" aria-hidden="true"></i> Email Us to Donate an Item
         </a>
       </div>
@@ -375,22 +418,23 @@
       <div class="footer-brand">
         <h3>2026 Advocacy Auction</h3>
         <p class="script" style="font-size:22px;color:var(--gold);">Among the Lanterns</p>
-        <p>Saturday, November 7, 2026 &middot; 5:00–10:00 PM PST<br>Claremont Club &amp; Spa, Berkeley, CA</p>
+        <p>Saturday, November 7, 2026 &middot; 5:00 PM &ndash; Midnight PST<br>Claremont Club &amp; Spa, Berkeley, CA</p>
         <p>Presented by <a href="https://www.unitedcontractors.org" target="_blank" rel="noopener">United Contractors (UCON)</a> to benefit the Government Advocacy program.</p>
       </div>
       <div class="footer-col">
         <h4>Explore</h4>
         <a href="index.html">Home</a>
+        <a href="impact.html">Our Impact</a>
         <a href="tickets.html">Tickets &amp; Registration</a>
         <a href="sponsorship.html">Event Sponsorship</a>
-        <a href="auction-giving.html">Sponsor an Item</a>
+        <a href="auction-giving.html">Donate an Item</a>
         <a href="event-info.html">Event Info</a>
       </div>
       <div class="footer-col">
         <h4>Take Action</h4>
         <a href="https://www.unitedcontractors.org/event-registration/2026-advocacy-auction-registration">Register</a>
         <a href="https://www.unitedcontractors.org/event-registration/2026-advocacy-auction-sponsorship-registration">Become a Sponsor</a>
-        <a href="mailto:events@unitedcontractors.org">Donate an Item</a>
+        <a href="mailto:events@unitedcontractors.org">Email to Donate an Item</a>
       </div>
       <div class="footer-col">
         <h4>Contact</h4>

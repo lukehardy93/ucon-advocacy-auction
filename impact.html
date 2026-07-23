@@ -3,17 +3,17 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Tickets &amp; Registration | 2026 UCON Advocacy Auction | Among the Lanterns</title>
-<meta name="description" content="Buy tickets to the 2026 UCON Advocacy Auction: Among the Lanterns, Saturday, November 7, 2026 at the Claremont Club &amp; Spa. Member and non-member pricing, full evening agenda, and refund policy.">
-<!-- TODO once a domain is live: add <link rel="canonical" href="https://REPLACE-WITH-DOMAIN/tickets.html"> and set og:url below -->
+<title>Our Impact | 2026 UCON Advocacy Auction | Among the Lanterns</title>
+<meta name="description" content="See how the UCON Advocacy Auction powers UCON's Government Advocacy program, including 2025's record-breaking results and highlights from past events.">
+<!-- TODO once a domain is live: add <link rel="canonical" href="https://REPLACE-WITH-DOMAIN/impact.html"> and set og:url below -->
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="2026 UCON Advocacy Auction">
-<meta property="og:title" content="Tickets &amp; Registration | 2026 UCON Advocacy Auction">
-<meta property="og:description" content="Buy tickets to the 2026 UCON Advocacy Auction: Among the Lanterns, Saturday, November 7, 2026 at the Claremont Club &amp; Spa.">
+<meta property="og:title" content="Our Impact | 2026 UCON Advocacy Auction">
+<meta property="og:description" content="See how the UCON Advocacy Auction powers UCON's Government Advocacy program, including 2025's record-breaking results.">
 <meta property="og:image" content="https://res.cloudinary.com/dhqtiaubo/image/upload/f_auto,q_auto,w_1200/v1784321325/UCON-2025-Advocacy-Auction-201-2473_n0xrlq.jpg">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Tickets &amp; Registration | 2026 UCON Advocacy Auction">
-<meta name="twitter:description" content="Member and non-member pricing, full evening agenda, and refund policy.">
+<meta name="twitter:title" content="Our Impact | 2026 UCON Advocacy Auction">
+<meta name="twitter:description" content="How the Advocacy Auction powers UCON's Government Advocacy program.">
 <meta name="twitter:image" content="https://res.cloudinary.com/dhqtiaubo/image/upload/f_auto,q_auto,w_1200/v1784321325/UCON-2025-Advocacy-Auction-201-2473_n0xrlq.jpg">
 <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
 <link rel="icon" href="img/favicon.ico" sizes="any">
@@ -24,10 +24,16 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
 <link rel="stylesheet" href="css/auction.css">
 <style>
-/* Page-scoped additions for the Tickets & Registration page only (prefixed .tix-) */
-.tix-agenda-head{max-width:680px;margin:0 auto 8px;}
-.tix-cta-links{margin-top:10px;font-size:14px;color:#C9C2AE;}
-.tix-cta-links a{color:var(--lantern);text-decoration:underline;}
+/* Impact page-only styles, prefixed .imp- per project convention */
+.imp-hero{position:relative;padding:150px 24px 90px;text-align:center;background:radial-gradient(ellipse at 50% 0%,var(--teal2) 0%,var(--teal) 66%);overflow:hidden;}
+.imp-hero-content{position:relative;z-index:1;max-width:760px;margin:0 auto;}
+.imp-hero .eyebrow{color:var(--lantern);}
+.imp-hero h1{font-family:var(--font-head);font-weight:800;font-size:clamp(34px,5vw,56px);color:#fff;margin-top:10px;}
+.imp-hero p{color:#C9C2AE;font-size:17px;font-weight:300;margin-top:16px;max-width:600px;margin-left:auto;margin-right:auto;}
+.imp-video-frame{position:relative;width:100%;max-width:860px;margin:0 auto;aspect-ratio:16/9;background:var(--teal2);border:1px solid var(--lineDark);border-radius:16px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;overflow:hidden;}
+.imp-video-frame i{font-size:40px;color:var(--lantern);opacity:.8;}
+.imp-video-frame p{color:#D9D3C4;font-size:15px;max-width:380px;text-align:center;margin:0;}
+.imp-video-frame iframe,.imp-video-frame video{position:absolute;inset:0;width:100%;height:100%;border:0;object-fit:cover;}
 </style>
 </head>
 <body>
@@ -49,8 +55,8 @@
     </a>
     <div class="nav-links">
       <div class="nav-item"><a href="index.html" class="nav-btn">Home</a></div>
-      <div class="nav-item"><a href="impact.html" class="nav-btn">Our Impact</a></div>
-      <div class="nav-item"><a href="tickets.html" class="nav-btn active">Tickets &amp; Registration</a></div>
+      <div class="nav-item"><a href="impact.html" class="nav-btn active">Our Impact</a></div>
+      <div class="nav-item"><a href="tickets.html" class="nav-btn">Tickets &amp; Registration</a></div>
       <div class="nav-item"><a href="sponsorship.html" class="nav-btn">Event Sponsorship</a></div>
       <div class="nav-item nav-dropdown">
         <a href="auction-giving.html" class="nav-btn nav-dropdown-toggle" aria-haspopup="true" aria-expanded="false">Donate an Item<span class="nav-dropdown-chev-btn" role="button" tabindex="0" aria-label="Toggle Donate an Item submenu" aria-expanded="false"><i class="fa-solid fa-chevron-down nav-dropdown-chev" aria-hidden="true"></i></span></a>
@@ -76,8 +82,8 @@
   </nav>
   <div class="mobile-menu" id="mobileMenu">
     <a href="index.html">Home</a>
-    <a href="impact.html">Our Impact</a>
-    <a href="tickets.html" class="active">Tickets &amp; Registration</a>
+    <a href="impact.html" class="active">Our Impact</a>
+    <a href="tickets.html">Tickets &amp; Registration</a>
     <a href="sponsorship.html">Event Sponsorship</a>
     <a href="auction-giving.html" class="mobile-menu-label">Donate an Item</a>
     <a href="auction-giving.html#silent-auction">Silent Auction</a>
@@ -93,117 +99,44 @@
 
 <main id="main-content">
 
-  <section class="page-hero">
-    <img class="page-hero-bg-img" src="https://res.cloudinary.com/dhqtiaubo/image/upload/f_auto,q_auto,w_1920/v1784321515/UCON-2025-Advocacy-Auction-154-2253_neqqbm.jpg" alt="" loading="eager">
-    <div class="page-hero-scrim" aria-hidden="true"></div>
-    <div class="page-hero-glow a"></div>
-    <div class="page-hero-glow b"></div>
-    <div class="page-hero-content">
-      <span class="eyebrow script">Join us</span>
-      <h1>Tickets &amp; Registration</h1>
-      <p>Secure your seat for an elegant evening of cocktails, dinner, and live bidding, all in support of UCON's Government Advocacy program.</p>
-    </div>
-  </section>
-
-  <section class="tint-paper">
-    <div class="container">
-      <div class="section-label"><span class="dot"></span><span>Tickets &amp; Pricing</span></div>
-      <h2 class="section-title">Choose Your Ticket</h2>
-      <p class="section-sub">Every ticket includes full access to the evening: cocktail reception, dinner, silent and live auction, and the afterparty. Choose the option that's right for you below.</p>
-
-      <div class="tickets-grid">
-        <div class="ticket-card featured">
-          <span class="ticket-badge gold">Best Value</span>
-          <h3 class="ticket-type">Member Ticket</h3>
-          <div class="ticket-prices">
-            <div class="ticket-price">$380<span class="who">Per ticket &middot; UCON Member</span></div>
-          </div>
-          <p class="ticket-note">For current United Contractors members and their guests.</p>
-          <div class="ticket-div"></div>
-          <ul class="ticket-features">
-            <li><i class="fa-solid fa-champagne-glasses" aria-hidden="true"></i>Cocktail reception with appetizers &amp; silent auction bidding, starting at 5:00 PM</li>
-            <li><i class="fa-solid fa-utensils" aria-hidden="true"></i>Welcome program &amp; seated dinner</li>
-            <li><i class="fa-solid fa-gavel" aria-hidden="true"></i>Reserved seating for the live auction, 8:00–10:00 PM</li>
-            <li><i class="fa-solid fa-music" aria-hidden="true"></i>Afterparty access starting at 10:00 PM</li>
-            <li><i class="fa-solid fa-users" aria-hidden="true"></i>Tables seat 10: purchase 10 tickets to reserve a table</li>
-          </ul>
-          <a href="https://www.unitedcontractors.org/event-registration/2026-advocacy-auction-registration" class="ticket-btn primary">Register Now</a>
-        </div>
-
-        <div class="ticket-card">
-          <span class="ticket-badge" style="visibility:hidden;" aria-hidden="true">Best Value</span>
-          <h3 class="ticket-type">Non-Member Ticket</h3>
-          <div class="ticket-prices">
-            <div class="ticket-price">$480<span class="who">Per ticket &middot; Non-Member</span></div>
-          </div>
-          <p class="ticket-note">For guests, industry partners, and affiliates outside UCON membership.</p>
-          <div class="ticket-div"></div>
-          <ul class="ticket-features">
-            <li><i class="fa-solid fa-champagne-glasses" aria-hidden="true"></i>Cocktail reception with appetizers &amp; silent auction bidding, starting at 5:00 PM</li>
-            <li><i class="fa-solid fa-utensils" aria-hidden="true"></i>Welcome program &amp; seated dinner</li>
-            <li><i class="fa-solid fa-gavel" aria-hidden="true"></i>Reserved seating for the live auction, 8:00–10:00 PM</li>
-            <li><i class="fa-solid fa-music" aria-hidden="true"></i>Afterparty access starting at 10:00 PM</li>
-            <li><i class="fa-solid fa-users" aria-hidden="true"></i>Tables seat 10: purchase 10 tickets to reserve a table</li>
-          </ul>
-          <a href="https://www.unitedcontractors.org/event-registration/2026-advocacy-auction-registration" class="ticket-btn primary">Register Now</a>
-        </div>
-      </div>
-
-      <div class="note-box">
-        <h4>Before You Register</h4>
-        <p>Tickets are available now through <strong>5:00 PM, Friday, October 30, 2026</strong>. Quantities are limited, so we recommend registering early. Tables seat 10: purchase 10 tickets to reserve a table. Don't know a guest's name yet? Enter <strong>&ldquo;TBD&rdquo;</strong> in the name field and update it later.</p>
-      </div>
+  <section class="imp-hero">
+    <div class="imp-hero-content">
+      <span class="eyebrow script">Why it matters</span>
+      <h1>Our Impact</h1>
+      <p>Every ticket, sponsorship, and bid at Among the Lanterns goes directly to UCON's Government Advocacy program: building coalitions, driving political support, and championing the ballot measures and regulations that shape our industry.</p>
     </div>
   </section>
 
   <section class="tint-cream2">
     <div class="container">
-      <div class="tix-agenda-head center">
-        <div class="section-label center" style="justify-content:center;"><span class="dot"></span><span>Evening Agenda</span></div>
-        <h2 class="section-title">Among the Lanterns: The Evening at a Glance</h2>
-        <p class="section-sub center">Saturday, November 7, 2026 &middot; Claremont Club &amp; Spa, Berkeley, CA</p>
+      <div class="section-label"><span class="dot"></span><span>2025 Results</span></div>
+      <h2 class="section-title">What Your Ticket Powers</h2>
+      <p class="section-sub">Every ticket, sponsorship, and bid goes directly to UCON's Government Advocacy program: building coalitions, driving political support, and championing the ballot measures and regulations that shape our industry.</p>
+
+      <div class="about-stats" style="grid-template-columns:1fr;max-width:320px;margin:28px 0 0;">
+        <div class="about-stat">
+          <div class="num">$375K+</div>
+          <div class="lbl">Raised in a single night in 2025, a record for the auction</div>
+        </div>
       </div>
 
-      <div class="timeline">
-        <div class="tl-row">
-          <div class="tl-time">5:00 PM</div>
-          <div class="tl-body"><strong>Cocktail Reception with Appetizers, Silent Auction Bidding</strong></div>
-        </div>
-        <div class="tl-row">
-          <div class="tl-time">6:15 PM</div>
-          <div class="tl-body"><strong>Silent Auction Tables Begin Closing</strong></div>
-        </div>
-        <div class="tl-row">
-          <div class="tl-time">6:45 PM</div>
-          <div class="tl-body"><strong>Silent Auction Ends, Dining Room Doors Open</strong></div>
-        </div>
-        <div class="tl-row">
-          <div class="tl-time">7:00 PM</div>
-          <div class="tl-body"><strong>Welcome &amp; Dinner</strong></div>
-        </div>
-        <div class="tl-row">
-          <div class="tl-time">8:00–10:00 PM</div>
-          <div class="tl-body"><strong>Live Auction</strong></div>
-        </div>
-        <div class="tl-row">
-          <div class="tl-time">10:00 PM &ndash; 12:00 AM</div>
-          <div class="tl-body"><strong>Afterparty</strong></div>
-        </div>
-        <div class="tl-row">
-          <div class="tl-time">10:30 PM</div>
-          <div class="tl-body"><strong>Auction Redemption Closes</strong></div>
-        </div>
+      <div class="value-quote" style="margin-top:28px;">
+        <span class="script">2025 Advocacy Auction</span>
+        <blockquote>Thank you to all the members who attended and supported our 2025 Advocacy Auction. A huge thank you to last year&rsquo;s sponsors, donors, attendees, and bidders: your support and generosity helped raise a record-breaking $375K+ for UCON&rsquo;s Government Advocacy program.</blockquote>
       </div>
     </div>
   </section>
 
   <section class="tint-paper">
     <div class="container">
-      <div class="section-label"><span class="dot"></span><span>Good to Know</span></div>
-      <h2 class="section-title">Refund Policy</h2>
-      <div class="note-box">
-        <h4>Cancellations &amp; Refunds</h4>
-        <p>We understand plans change. For a full refund, submit a written cancellation request to <a href="mailto:roraa@unitedcontractors.org">Rachel Oraa</a> by October 31, 2026 (one week before the event). After October 31, cancellations can occur, but refunds are no longer eligible.</p>
+      <div class="section-label"><span class="dot"></span><span>See It For Yourself</span></div>
+      <h2 class="section-title">Watch the Impact</h2>
+      <p class="section-sub">A look back at past Advocacy Auctions, from the room to the results.</p>
+      <div class="imp-video-frame">
+        <video controls preload="metadata" playsinline>
+          <source src="https://res.cloudinary.com/dhqtiaubo/video/upload/v1784823860/Ucon_Presentation_Revised_Final_wk7l4d.mp4" type="video/mp4">
+          Your browser does not support embedded video. <a href="https://res.cloudinary.com/dhqtiaubo/video/upload/v1784823860/Ucon_Presentation_Revised_Final_wk7l4d.mp4">Watch the video directly</a>.
+        </video>
       </div>
     </div>
   </section>
@@ -211,14 +144,12 @@
   <section class="cta-block">
     <div class="container">
       <span class="script">Among the Lanterns</span>
-      <h2>Reserve Your Seat Tonight</h2>
+      <h2>Be Part of the Next Record</h2>
       <p>Join fellow members, affiliates, and industry partners for a night that powers the voice of union contractors.</p>
       <div class="cta-inner">
-        <a href="https://www.unitedcontractors.org/event-registration/2026-advocacy-auction-registration" class="btn-cream">Register for the Auction</a>
+        <a href="tickets.html" class="btn-cream">Get Your Tickets</a>
         <a href="sponsorship.html" class="btn-cream-out">Become a Sponsor</a>
-        <a href="auction-giving.html" class="btn-cream-out">Give to the Auction</a>
       </div>
-      <p class="tix-cta-links">Not ready for a ticket? Explore <a href="sponsorship.html">Event Sponsorship</a> or <a href="auction-giving.html">Donate an Item</a> instead.</p>
     </div>
   </section>
 

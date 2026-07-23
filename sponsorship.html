@@ -27,6 +27,8 @@
 /* Sponsorship-page-only helpers, scoped with .spon- prefix per project convention */
 .spon-tier-count{font-size:15px;color:var(--mut);margin-top:10px;}
 .spon-logo-intro{max-width:680px;}
+.spon-annual-wall{margin-top:32px;background:var(--paper);border:1px solid var(--line);border-radius:16px;padding:20px;box-shadow:var(--shadow-sm);}
+.spon-annual-wall img{display:block;width:100%;height:auto;border-radius:8px;}
 /* Mirrors .note-box h4 styling without using a heading tag, so the note box
    (a callout, not a document section) doesn't break h1->h2->h3 order. */
 .spon-note-label{font-family:var(--font-head);font-size:18px;font-weight:700;color:var(--goldD);margin-bottom:6px;display:block;}
@@ -51,10 +53,11 @@
     </a>
     <div class="nav-links">
       <div class="nav-item"><a href="index.html" class="nav-btn">Home</a></div>
+      <div class="nav-item"><a href="impact.html" class="nav-btn">Our Impact</a></div>
       <div class="nav-item"><a href="tickets.html" class="nav-btn">Tickets &amp; Registration</a></div>
       <div class="nav-item"><a href="sponsorship.html" class="nav-btn active">Event Sponsorship</a></div>
       <div class="nav-item nav-dropdown">
-        <a href="auction-giving.html" class="nav-btn nav-dropdown-toggle" aria-haspopup="true" aria-expanded="false">Sponsor an Item<span class="nav-dropdown-chev-btn" role="button" tabindex="0" aria-label="Toggle Sponsor an Item submenu" aria-expanded="false"><i class="fa-solid fa-chevron-down nav-dropdown-chev" aria-hidden="true"></i></span></a>
+        <a href="auction-giving.html" class="nav-btn nav-dropdown-toggle" aria-haspopup="true" aria-expanded="false">Donate an Item<span class="nav-dropdown-chev-btn" role="button" tabindex="0" aria-label="Toggle Donate an Item submenu" aria-expanded="false"><i class="fa-solid fa-chevron-down nav-dropdown-chev" aria-hidden="true"></i></span></a>
         <div class="nav-dropdown-menu">
           <a href="auction-giving.html#silent-auction">Silent Auction</a>
           <a href="auction-giving.html#live-auction">Live Auction</a>
@@ -77,9 +80,10 @@
   </nav>
   <div class="mobile-menu" id="mobileMenu">
     <a href="index.html">Home</a>
+    <a href="impact.html">Our Impact</a>
     <a href="tickets.html">Tickets &amp; Registration</a>
     <a href="sponsorship.html" class="active">Event Sponsorship</a>
-    <a href="auction-giving.html" class="mobile-menu-label">Sponsor an Item</a>
+    <a href="auction-giving.html" class="mobile-menu-label">Donate an Item</a>
     <a href="auction-giving.html#silent-auction">Silent Auction</a>
     <a href="auction-giving.html#live-auction">Live Auction</a>
     <a href="event-info.html">Event Info</a>
@@ -353,17 +357,10 @@
   <section class="tint-cream2">
     <div class="container">
       <div class="section-label"><span class="dot"></span><span>Our Partners</span></div>
-      <h2 class="section-title">Past &amp; Current Sponsors</h2>
-      <p class="section-sub spon-logo-intro">We're grateful to the organizations that power UCON's Government Advocacy program through sponsorship. Logos for 2026 sponsors will appear here as they are confirmed.</p>
-      <div class="logo-wall">
-        <div class="logo-slot">Sponsor logo: coming soon</div>
-        <div class="logo-slot">Sponsor logo: coming soon</div>
-        <div class="logo-slot">Sponsor logo: coming soon</div>
-        <div class="logo-slot">Sponsor logo: coming soon</div>
-        <div class="logo-slot">Sponsor logo: coming soon</div>
-        <div class="logo-slot">Sponsor logo: coming soon</div>
-        <div class="logo-slot">Sponsor logo: coming soon</div>
-        <div class="logo-slot">Sponsor logo: coming soon</div>
+      <h2 class="section-title">Annual Sponsors</h2>
+      <p class="section-sub spon-logo-intro">We're grateful to the organizations that power UCON's Government Advocacy program year after year through sponsorship.</p>
+      <div class="spon-annual-wall">
+        <img src="https://res.cloudinary.com/dhqtiaubo/image/upload/f_auto,q_auto,w_1600/v1784824984/2026_Annual_Sponsors_June_1_nxzrlc.jpg" alt="2026 UCON Advocacy Auction Annual Sponsors" loading="lazy">
       </div>
     </div>
   </section>
@@ -414,22 +411,23 @@
       <div class="footer-brand">
         <h3>2026 Advocacy Auction</h3>
         <p class="script" style="font-size:22px;color:var(--gold);">Among the Lanterns</p>
-        <p>Saturday, November 7, 2026 &middot; 5:00–10:00 PM PST<br>Claremont Club &amp; Spa, Berkeley, CA</p>
+        <p>Saturday, November 7, 2026 &middot; 5:00 PM &ndash; Midnight PST<br>Claremont Club &amp; Spa, Berkeley, CA</p>
         <p>Presented by <a href="https://www.unitedcontractors.org" target="_blank" rel="noopener">United Contractors (UCON)</a> to benefit the Government Advocacy program.</p>
       </div>
       <div class="footer-col">
         <h4>Explore</h4>
         <a href="index.html">Home</a>
+        <a href="impact.html">Our Impact</a>
         <a href="tickets.html">Tickets &amp; Registration</a>
         <a href="sponsorship.html">Event Sponsorship</a>
-        <a href="auction-giving.html">Sponsor an Item</a>
+        <a href="auction-giving.html">Donate an Item</a>
         <a href="event-info.html">Event Info</a>
       </div>
       <div class="footer-col">
         <h4>Take Action</h4>
         <a href="https://www.unitedcontractors.org/event-registration/2026-advocacy-auction-registration">Register</a>
         <a href="https://www.unitedcontractors.org/event-registration/2026-advocacy-auction-sponsorship-registration">Become a Sponsor</a>
-        <a href="mailto:events@unitedcontractors.org">Donate an Item</a>
+        <a href="mailto:events@unitedcontractors.org">Email to Donate an Item</a>
       </div>
       <div class="footer-col">
         <h4>Contact</h4>

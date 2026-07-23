@@ -41,6 +41,16 @@
 .giv-atmo-figure{margin:40px 0 0;border:1px solid var(--line);background:var(--paper);max-width:560px;}
 .giv-atmo-figure img{display:block;width:100%;height:auto;max-height:380px;object-fit:cover;}
 .giv-atmo-figure figcaption{padding:14px 20px;font-family:var(--font-body);font-weight:300;font-size:13px;font-style:italic;color:var(--mut);border-top:1px solid var(--line);}
+.evt-attire-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:32px;}
+.evt-attire-card{background:var(--paper);border:1px solid var(--line);border-radius:16px;overflow:hidden;margin:0;}
+.evt-attire-card img{display:block;width:100%;height:320px;object-fit:cover;object-position:center 20%;}
+.evt-attire-card figcaption{padding:20px 22px;}
+.evt-attire-card h4{font-family:var(--font-head);font-size:18px;font-weight:700;margin-bottom:6px;}
+.evt-attire-card p{font-family:var(--font-body);font-size:14px;color:var(--ink2);}
+.evt-attire-note{margin-top:16px;font-size:12px;color:var(--mut);font-style:italic;}
+@media(max-width:700px){
+  .evt-attire-grid{grid-template-columns:1fr;}
+}
 </style>
 </head>
 <body>
@@ -62,10 +72,11 @@
     </a>
     <div class="nav-links">
       <div class="nav-item"><a href="index.html" class="nav-btn">Home</a></div>
+      <div class="nav-item"><a href="impact.html" class="nav-btn">Our Impact</a></div>
       <div class="nav-item"><a href="tickets.html" class="nav-btn">Tickets &amp; Registration</a></div>
       <div class="nav-item"><a href="sponsorship.html" class="nav-btn">Event Sponsorship</a></div>
       <div class="nav-item nav-dropdown">
-        <a href="auction-giving.html" class="nav-btn nav-dropdown-toggle" aria-haspopup="true" aria-expanded="false">Sponsor an Item<span class="nav-dropdown-chev-btn" role="button" tabindex="0" aria-label="Toggle Sponsor an Item submenu" aria-expanded="false"><i class="fa-solid fa-chevron-down nav-dropdown-chev" aria-hidden="true"></i></span></a>
+        <a href="auction-giving.html" class="nav-btn nav-dropdown-toggle" aria-haspopup="true" aria-expanded="false">Donate an Item<span class="nav-dropdown-chev-btn" role="button" tabindex="0" aria-label="Toggle Donate an Item submenu" aria-expanded="false"><i class="fa-solid fa-chevron-down nav-dropdown-chev" aria-hidden="true"></i></span></a>
         <div class="nav-dropdown-menu">
           <a href="auction-giving.html#silent-auction">Silent Auction</a>
           <a href="auction-giving.html#live-auction">Live Auction</a>
@@ -88,9 +99,10 @@
   </nav>
   <div class="mobile-menu" id="mobileMenu">
     <a href="index.html">Home</a>
+    <a href="impact.html">Our Impact</a>
     <a href="tickets.html">Tickets &amp; Registration</a>
     <a href="sponsorship.html">Event Sponsorship</a>
-    <a href="auction-giving.html" class="mobile-menu-label">Sponsor an Item</a>
+    <a href="auction-giving.html" class="mobile-menu-label">Donate an Item</a>
     <a href="auction-giving.html#silent-auction">Silent Auction</a>
     <a href="auction-giving.html#live-auction">Live Auction</a>
     <a href="event-info.html" class="active">Event Info</a>
@@ -144,7 +156,7 @@
           <div class="tl-body"><strong>Live Auction</strong></div>
         </div>
         <div class="tl-row">
-          <div class="tl-time">10:00 PM</div>
+          <div class="tl-time">10:00 PM &ndash; 12:00 AM</div>
           <div class="tl-body"><strong>Afterparty</strong></div>
         </div>
         <div class="tl-row">
@@ -194,7 +206,7 @@
               <i class="fa-regular fa-clock" aria-hidden="true"></i>
               <div>
                 <div class="ec-lbl">Time</div>
-                <div class="ec-val">5:00 PM &ndash; 10:00 PM PST</div>
+                <div class="ec-val">5:00 PM &ndash; Midnight PST</div>
               </div>
             </div>
             <div class="ec-row">
@@ -215,6 +227,31 @@
           <iframe src="https://maps.google.com/maps?q=Claremont+Club+%26+Spa%0D%0A41+Tunnel+Road%2C%0D%0ABerkeley%2C+CA+94705&amp;hl=en&amp;t=m&amp;z=14&amp;output=embed" title="Map showing the Claremont Club &amp; Spa, 41 Tunnel Road, Berkeley, CA 94705" loading="lazy" allowfullscreen></iframe>
         </div>
       </div>
+    </div>
+  </section>
+
+  <section class="tint-cream2" id="attire">
+    <div class="container evt-section-inner">
+      <div class="section-label"><span class="dot"></span><span>What to Wear</span></div>
+      <h2 class="section-title">Suggested Attire</h2>
+      <p class="section-sub">Among the Lanterns is formal, black-tie optional. A little inspiration to help you plan your look:</p>
+      <div class="evt-attire-grid">
+        <figure class="evt-attire-card">
+          <img src="https://images.unsplash.com/photo-1765229277842-5f6b8510d00c?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Formal evening gown, an example of black-tie-optional attire for guests" loading="lazy">
+          <figcaption>
+            <h4>For Guests</h4>
+            <p>Cocktail dresses, gowns, and elegant evening separates all work beautifully.</p>
+          </figcaption>
+        </figure>
+        <figure class="evt-attire-card">
+          <img src="https://images.unsplash.com/photo-1755537131223-7c1b667696fd?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Formal black tuxedo, an example of black-tie-optional attire for gentlemen" loading="lazy">
+          <figcaption>
+            <h4>For Gentlemen</h4>
+            <p>Suits or tuxedos are both welcome; ties or bow ties encouraged.</p>
+          </figcaption>
+        </figure>
+      </div>
+      <p class="evt-attire-note">Photos are styling inspiration, not photos from a past auction.</p>
     </div>
   </section>
 
@@ -241,6 +278,13 @@
           <h4>Book by phone</h4>
           <p><a href="tel:15108433000">(510) 843-3000</a>. Mention "UCON 26 Advocacy Auction" when booking.</p>
         </div>
+        <div class="info-cell">
+          <h4>If the block sells out</h4>
+          <p>A few nearby options:<br>
+          <a href="https://www.marriott.com/en-us/hotels/oakrr-residence-inn-berkeley/overview/" target="_blank" rel="noopener">Residence Inn by Marriott Berkeley</a><br>
+          <a href="https://www.hotelshattuckplaza.com/" target="_blank" rel="noopener">Hotel Shattuck Plaza</a><br>
+          <a href="https://www.berkeleycityclub.com/" target="_blank" rel="noopener">Berkeley City Club</a></p>
+        </div>
       </div>
     </div>
   </section>
@@ -251,7 +295,7 @@
       <h2 class="section-title">Refund Policy</h2>
       <div class="evt-refund-box">
         <p>Plans change; here is our policy on ticket cancellations:</p>
-        <blockquote>&ldquo;For a full refund, submit a written cancellation request to Rachel at <a href="mailto:roraa@unitedcontractors.org">roraa@unitedcontractors.org</a> by October 31, 2026 (one week before the event). After October 31, you may still cancel, but refunds are no longer eligible.&rdquo;</blockquote>
+        <blockquote>&ldquo;For a full refund, submit a written cancellation request to <a href="mailto:roraa@unitedcontractors.org">Rachel Oraa</a> by October 31, 2026 (one week before the event). After October 31, you may still cancel, but refunds are no longer eligible.&rdquo;</blockquote>
       </div>
     </div>
   </section>
@@ -268,7 +312,7 @@
             <i class="fa-solid fa-chevron-down acc-chev" aria-hidden="true"></i>
           </summary>
           <div class="acc-body">
-            <p>The Advocacy Auction runs Saturday, November 7, 2026 from 5:00 PM to 10:00 PM PST. The Cocktail Reception and Silent Auction begin at 5:00 PM, and the formal program runs through the Live Auction, ending with an Afterparty at 10:00 PM. Auction item redemption closes at 10:30 PM. See the full agenda above.</p>
+            <p>The Advocacy Auction runs Saturday, November 7, 2026 from 5:00 PM to Midnight PST. The Cocktail Reception and Silent Auction begin at 5:00 PM, and the formal program runs through the Live Auction before the Afterparty takes over from 10:00 PM to Midnight. Auction item redemption closes at 10:30 PM. See the full agenda above.</p>
           </div>
         </details>
         <details class="acc-item">
@@ -286,7 +330,7 @@
             <i class="fa-solid fa-chevron-down acc-chev" aria-hidden="true"></i>
           </summary>
           <div class="acc-body">
-            <p>Yes, if you cancel in time. Submit a written cancellation request to Rachel at <a href="mailto:roraa@unitedcontractors.org">roraa@unitedcontractors.org</a> by October 31, 2026 for a full refund. After October 31, you may still cancel, but refunds are no longer eligible. See the Refund Policy above for the exact wording.</p>
+            <p>Yes, if you cancel in time. Submit a written cancellation request to <a href="mailto:roraa@unitedcontractors.org">Rachel Oraa</a> by October 31, 2026 for a full refund. After October 31, you may still cancel, but refunds are no longer eligible. See the Refund Policy above for the exact wording.</p>
           </div>
         </details>
         <details class="acc-item">
@@ -304,7 +348,7 @@
             <i class="fa-solid fa-chevron-down acc-chev" aria-hidden="true"></i>
           </summary>
           <div class="acc-body">
-            <p>Visit the <a href="sponsorship.html">Event Sponsorship</a> page for tiers, pricing, and to submit a sponsorship request. To donate an item or experience for the auction, email <a href="mailto:events@unitedcontractors.org">events@unitedcontractors.org</a>; details are also on the <a href="auction-giving.html">Sponsor an Item</a> page.</p>
+            <p>Visit the <a href="sponsorship.html">Event Sponsorship</a> page for tiers, pricing, and to submit a sponsorship request. To donate an item or experience for the auction, email <a href="mailto:events@unitedcontractors.org">events@unitedcontractors.org</a>; details are also on the <a href="auction-giving.html">Donate an Item</a> page.</p>
           </div>
         </details>
         <details class="acc-item">
@@ -313,7 +357,7 @@
             <i class="fa-solid fa-chevron-down acc-chev" aria-hidden="true"></i>
           </summary>
           <div class="acc-body">
-            <p>Suggested attire is formal (black-tie optional). Think cocktail dresses, gowns, and evening separates for guests; suits or tuxedos for gentlemen. Parking details are still being finalized; check back closer to the event.<br><span class="evt-coming-soon">Parking: coming soon</span></p>
+            <p>Suggested attire is formal (black-tie optional): see the <a href="#attire">Suggested Attire</a> section above for inspiration. Parking details are still being finalized; check back closer to the event.<br><span class="evt-coming-soon">Parking: coming soon</span></p>
           </div>
         </details>
       </div>
@@ -380,22 +424,23 @@
       <div class="footer-brand">
         <h3>2026 Advocacy Auction</h3>
         <p class="script" style="font-size:22px;color:var(--gold);">Among the Lanterns</p>
-        <p>Saturday, November 7, 2026 &middot; 5:00–10:00 PM PST<br>Claremont Club &amp; Spa, Berkeley, CA</p>
+        <p>Saturday, November 7, 2026 &middot; 5:00 PM &ndash; Midnight PST<br>Claremont Club &amp; Spa, Berkeley, CA</p>
         <p>Presented by <a href="https://www.unitedcontractors.org" target="_blank" rel="noopener">United Contractors (UCON)</a> to benefit the Government Advocacy program.</p>
       </div>
       <div class="footer-col">
         <h4>Explore</h4>
         <a href="index.html">Home</a>
+        <a href="impact.html">Our Impact</a>
         <a href="tickets.html">Tickets &amp; Registration</a>
         <a href="sponsorship.html">Event Sponsorship</a>
-        <a href="auction-giving.html">Sponsor an Item</a>
+        <a href="auction-giving.html">Donate an Item</a>
         <a href="event-info.html">Event Info</a>
       </div>
       <div class="footer-col">
         <h4>Take Action</h4>
         <a href="https://www.unitedcontractors.org/event-registration/2026-advocacy-auction-registration">Register</a>
         <a href="https://www.unitedcontractors.org/event-registration/2026-advocacy-auction-sponsorship-registration">Become a Sponsor</a>
-        <a href="mailto:events@unitedcontractors.org">Donate an Item</a>
+        <a href="mailto:events@unitedcontractors.org">Email to Donate an Item</a>
       </div>
       <div class="footer-col">
         <h4>Contact</h4>
