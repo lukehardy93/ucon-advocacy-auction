@@ -10,11 +10,11 @@
 <meta property="og:site_name" content="2026 UCON Advocacy Auction">
 <meta property="og:title" content="Event Info | 2026 UCON Advocacy Auction">
 <meta property="og:description" content="Everything you need to know for the 2026 UCON Advocacy Auction: full agenda, venue and map, hotel block, refund policy, and FAQ.">
-<meta property="og:image" content="https://res.cloudinary.com/dhqtiaubo/image/upload/v1784321325/UCON-2025-Advocacy-Auction-201-2473_n0xrlq.jpg">
+<meta property="og:image" content="https://res.cloudinary.com/dhqtiaubo/image/upload/f_auto,q_auto,w_1200/v1784321325/UCON-2025-Advocacy-Auction-201-2473_n0xrlq.jpg">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Event Info | 2026 UCON Advocacy Auction">
 <meta name="twitter:description" content="Full agenda, venue and map, hotel block, refund policy, and FAQ.">
-<meta name="twitter:image" content="https://res.cloudinary.com/dhqtiaubo/image/upload/v1784321325/UCON-2025-Advocacy-Auction-201-2473_n0xrlq.jpg">
+<meta name="twitter:image" content="https://res.cloudinary.com/dhqtiaubo/image/upload/f_auto,q_auto,w_1200/v1784321325/UCON-2025-Advocacy-Auction-201-2473_n0xrlq.jpg">
 <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
 <link rel="icon" href="img/favicon.ico" sizes="any">
 <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
@@ -38,6 +38,9 @@
 .evt-social-row{display:flex;gap:14px;justify-content:center;margin-top:6px;}
 .evt-social-row a{display:inline-flex;align-items:center;gap:6px;color:#fff;text-decoration:underline;}
 .evt-coming-soon{display:inline-block;margin-top:8px;font-size:12px;font-weight:700;letter-spacing:.6px;text-transform:uppercase;color:var(--goldD);background:var(--goldL);padding:4px 12px;border-radius:999px;}
+.giv-atmo-figure{margin:40px 0 0;border:1px solid var(--line);background:var(--paper);max-width:560px;}
+.giv-atmo-figure img{display:block;width:100%;height:auto;max-height:380px;object-fit:cover;}
+.giv-atmo-figure figcaption{padding:14px 20px;font-family:var(--font-body);font-weight:300;font-size:13px;font-style:italic;color:var(--mut);border-top:1px solid var(--line);}
 </style>
 </head>
 <body>
@@ -60,8 +63,14 @@
     <div class="nav-links">
       <div class="nav-item"><a href="index.html" class="nav-btn">Home</a></div>
       <div class="nav-item"><a href="tickets.html" class="nav-btn">Tickets &amp; Registration</a></div>
-      <div class="nav-item"><a href="sponsorship.html" class="nav-btn">Sponsorship</a></div>
-      <div class="nav-item"><a href="auction-giving.html" class="nav-btn">Auction &amp; Giving</a></div>
+      <div class="nav-item"><a href="sponsorship.html" class="nav-btn">Event Sponsorship</a></div>
+      <div class="nav-item nav-dropdown">
+        <button class="nav-btn nav-dropdown-toggle" aria-haspopup="true" aria-expanded="false">Sponsor an Item<i class="fa-solid fa-chevron-down nav-dropdown-chev" aria-hidden="true"></i></button>
+        <div class="nav-dropdown-menu">
+          <a href="auction-giving.html#silent-auction">Silent Auction</a>
+          <a href="auction-giving.html#live-auction">Live Auction</a>
+        </div>
+      </div>
       <div class="nav-item"><a href="event-info.html" class="nav-btn active">Event Info</a></div>
             <div class="nav-item nav-dropdown">
         <button class="nav-btn nav-dropdown-toggle" aria-haspopup="true" aria-expanded="false">About<i class="fa-solid fa-chevron-down nav-dropdown-chev" aria-hidden="true"></i></button>
@@ -80,8 +89,10 @@
   <div class="mobile-menu" id="mobileMenu">
     <a href="index.html">Home</a>
     <a href="tickets.html">Tickets &amp; Registration</a>
-    <a href="sponsorship.html">Sponsorship</a>
-    <a href="auction-giving.html">Auction &amp; Giving</a>
+    <a href="sponsorship.html">Event Sponsorship</a>
+    <div class="mobile-menu-label">Sponsor an Item</div>
+    <a href="auction-giving.html#silent-auction">Silent Auction</a>
+    <a href="auction-giving.html#live-auction">Live Auction</a>
     <a href="event-info.html" class="active">Event Info</a>
         <div class="mobile-menu-label">About UCON</div>
     <a href="https://www.unitedcontractors.org">About UCON</a>
@@ -94,7 +105,7 @@
 <main id="main-content">
 
   <section class="page-hero">
-    <img class="page-hero-bg-img" src="https://res.cloudinary.com/dhqtiaubo/image/upload/v1784321515/UCON-2025-Advocacy-Auction-154-2253_neqqbm.jpg" alt="" loading="eager">
+    <img class="page-hero-bg-img" src="https://res.cloudinary.com/dhqtiaubo/image/upload/f_auto,q_auto,w_1920/v1784765596/UCON-2024-Annual-Auction-205-1164_fqtg5q.jpg" alt="" loading="eager">
     <div class="page-hero-scrim" aria-hidden="true"></div>
     <div class="page-hero-glow a"></div>
     <div class="page-hero-glow b"></div>
@@ -144,7 +155,31 @@
     </div>
   </section>
 
+  <!-- HOW IT WORKS -->
   <section class="tint-cream2">
+    <div class="container">
+      <div class="section-label"><span class="dot"></span><span>How It Works</span></div>
+      <h2 class="section-title">Two Ways to Bid</h2>
+      <p class="section-sub">The lanterns are lit, the wine is poured, and somewhere across the room, someone just got outbid. Bidding builds all evening long in two distinct formats: check the times below so you don't miss your moment to raise a paddle.</p>
+      <div class="card-grid">
+        <div class="feature-card">
+          <div class="feature-ico"><i class="fa-solid fa-clipboard-list" aria-hidden="true"></i></div>
+          <h3>Silent Auction</h3>
+          <p><strong>5:00 PM – 6:45 PM.</strong> The cocktail reception hums with quiet competition as guests circle the tables, bid sheets in hand, sizing up the pack and sneaking back for one more number before someone else claims it. Bidding tables begin closing at 6:15 PM, and the room's energy tightens table by table until the silent auction ends at 6:45 PM, right as the dining room doors swing open.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-ico ember"><i class="fa-solid fa-gavel" aria-hidden="true"></i></div>
+          <h3>Live Auction</h3>
+          <p><strong>8:00 PM – 10:00 PM.</strong> Then the room shifts gears: our auctioneer takes the stage, marquee items go up for grabs during and after dinner, and paddles shoot into the air table after table as friendly rivalries break out over the night's biggest prizes. Every "going once" raises the stakes, and every paddle raised helps push the night's total even higher.</p>
+        </div>
+      </div>
+      <figure class="giv-atmo-figure">
+        <img src="https://res.cloudinary.com/dhqtiaubo/image/upload/f_auto,q_auto,w_800/v1784321474/UCON-2025-Advocacy-Auction-230-2611_moxzwz.jpg" alt="Guests bidding at the 2025 UCON Advocacy Auction" loading="lazy">
+      </figure>
+    </div>
+  </section>
+
+  <section class="tint-paper">
     <div class="container">
       <div class="event-card">
         <h2 class="section-title">When &amp; Where</h2>
@@ -269,7 +304,7 @@
             <i class="fa-solid fa-chevron-down acc-chev" aria-hidden="true"></i>
           </summary>
           <div class="acc-body">
-            <p>Visit the <a href="sponsorship.html">Sponsorship</a> page for tiers, pricing, and to submit a sponsorship request. To donate an item or experience for the auction, email <a href="mailto:events@unitedcontractors.org">events@unitedcontractors.org</a>; details are also on the <a href="auction-giving.html">Auction &amp; Giving</a> page.</p>
+            <p>Visit the <a href="sponsorship.html">Event Sponsorship</a> page for tiers, pricing, and to submit a sponsorship request. To donate an item or experience for the auction, email <a href="mailto:events@unitedcontractors.org">events@unitedcontractors.org</a>; details are also on the <a href="auction-giving.html">Sponsor an Item</a> page.</p>
           </div>
         </details>
         <details class="acc-item">
@@ -318,25 +353,25 @@
       <defs><clipPath id="lanternOval" clipPathUnits="objectBoundingBox"><ellipse cx="0.5" cy="0.5" rx="0.5" ry="0.5"/></clipPath></defs>
     <line x1="0" y1="4" x2="1400" y2="4" stroke="var(--gold)" stroke-width="1" opacity="0.25"/>
       <line x1="60" y1="4" x2="60" y2="10" stroke="var(--gold)" stroke-width="1.5" opacity="0.70"/>
-      <image href="https://res.cloudinary.com/dhqtiaubo/image/upload/v1784763276/lantern_nnxotv.webp" x="53" y="10" width="14" height="18" opacity="0.55" clip-path="url(#lanternOval)" preserveAspectRatio="xMidYMid slice"/>
+      <image href="https://res.cloudinary.com/dhqtiaubo/image/upload/f_auto,q_auto,w_150/v1784763276/lantern_nnxotv.webp" x="53" y="10" width="14" height="18" opacity="0.55" clip-path="url(#lanternOval)" preserveAspectRatio="xMidYMid slice"/>
       <line x1="202" y1="4" x2="202" y2="10" stroke="var(--gold)" stroke-width="1.5" opacity="0.97"/>
-      <image href="https://res.cloudinary.com/dhqtiaubo/image/upload/v1784763276/lantern_nnxotv.webp" x="191" y="10" width="22" height="29" opacity="0.82" clip-path="url(#lanternOval)" preserveAspectRatio="xMidYMid slice"/>
+      <image href="https://res.cloudinary.com/dhqtiaubo/image/upload/f_auto,q_auto,w_150/v1784763276/lantern_nnxotv.webp" x="191" y="10" width="22" height="29" opacity="0.82" clip-path="url(#lanternOval)" preserveAspectRatio="xMidYMid slice"/>
       <line x1="344" y1="4" x2="344" y2="10" stroke="var(--gold)" stroke-width="1.5" opacity="0.80"/>
-      <image href="https://res.cloudinary.com/dhqtiaubo/image/upload/v1784763276/lantern_nnxotv.webp" x="336" y="10" width="17" height="22" opacity="0.65" clip-path="url(#lanternOval)" preserveAspectRatio="xMidYMid slice"/>
+      <image href="https://res.cloudinary.com/dhqtiaubo/image/upload/f_auto,q_auto,w_150/v1784763276/lantern_nnxotv.webp" x="336" y="10" width="17" height="22" opacity="0.65" clip-path="url(#lanternOval)" preserveAspectRatio="xMidYMid slice"/>
       <line x1="486" y1="4" x2="486" y2="10" stroke="var(--gold)" stroke-width="1.5" opacity="1.00"/>
-      <image href="https://res.cloudinary.com/dhqtiaubo/image/upload/v1784763276/lantern_nnxotv.webp" x="473" y="10" width="26" height="34" opacity="0.95" clip-path="url(#lanternOval)" preserveAspectRatio="xMidYMid slice"/>
+      <image href="https://res.cloudinary.com/dhqtiaubo/image/upload/f_auto,q_auto,w_150/v1784763276/lantern_nnxotv.webp" x="473" y="10" width="26" height="34" opacity="0.95" clip-path="url(#lanternOval)" preserveAspectRatio="xMidYMid slice"/>
       <line x1="628" y1="4" x2="628" y2="10" stroke="var(--gold)" stroke-width="1.5" opacity="0.73"/>
-      <image href="https://res.cloudinary.com/dhqtiaubo/image/upload/v1784763276/lantern_nnxotv.webp" x="621" y="10" width="15" height="20" opacity="0.58" clip-path="url(#lanternOval)" preserveAspectRatio="xMidYMid slice"/>
+      <image href="https://res.cloudinary.com/dhqtiaubo/image/upload/f_auto,q_auto,w_150/v1784763276/lantern_nnxotv.webp" x="621" y="10" width="15" height="20" opacity="0.58" clip-path="url(#lanternOval)" preserveAspectRatio="xMidYMid slice"/>
       <line x1="771" y1="4" x2="771" y2="10" stroke="var(--gold)" stroke-width="1.5" opacity="0.90"/>
-      <image href="https://res.cloudinary.com/dhqtiaubo/image/upload/v1784763276/lantern_nnxotv.webp" x="761" y="10" width="20" height="26" opacity="0.75" clip-path="url(#lanternOval)" preserveAspectRatio="xMidYMid slice"/>
+      <image href="https://res.cloudinary.com/dhqtiaubo/image/upload/f_auto,q_auto,w_150/v1784763276/lantern_nnxotv.webp" x="761" y="10" width="20" height="26" opacity="0.75" clip-path="url(#lanternOval)" preserveAspectRatio="xMidYMid slice"/>
       <line x1="913" y1="4" x2="913" y2="10" stroke="var(--gold)" stroke-width="1.5" opacity="1.00"/>
-      <image href="https://res.cloudinary.com/dhqtiaubo/image/upload/v1784763276/lantern_nnxotv.webp" x="901" y="10" width="24" height="31" opacity="0.88" clip-path="url(#lanternOval)" preserveAspectRatio="xMidYMid slice"/>
+      <image href="https://res.cloudinary.com/dhqtiaubo/image/upload/f_auto,q_auto,w_150/v1784763276/lantern_nnxotv.webp" x="901" y="10" width="24" height="31" opacity="0.88" clip-path="url(#lanternOval)" preserveAspectRatio="xMidYMid slice"/>
       <line x1="1055" y1="4" x2="1055" y2="10" stroke="var(--gold)" stroke-width="1.5" opacity="0.77"/>
-      <image href="https://res.cloudinary.com/dhqtiaubo/image/upload/v1784763276/lantern_nnxotv.webp" x="1047" y="10" width="16" height="21" opacity="0.62" clip-path="url(#lanternOval)" preserveAspectRatio="xMidYMid slice"/>
+      <image href="https://res.cloudinary.com/dhqtiaubo/image/upload/f_auto,q_auto,w_150/v1784763276/lantern_nnxotv.webp" x="1047" y="10" width="16" height="21" opacity="0.62" clip-path="url(#lanternOval)" preserveAspectRatio="xMidYMid slice"/>
       <line x1="1197" y1="4" x2="1197" y2="10" stroke="var(--gold)" stroke-width="1.5" opacity="0.97"/>
-      <image href="https://res.cloudinary.com/dhqtiaubo/image/upload/v1784763276/lantern_nnxotv.webp" x="1186" y="10" width="22" height="29" opacity="0.82" clip-path="url(#lanternOval)" preserveAspectRatio="xMidYMid slice"/>
+      <image href="https://res.cloudinary.com/dhqtiaubo/image/upload/f_auto,q_auto,w_150/v1784763276/lantern_nnxotv.webp" x="1186" y="10" width="22" height="29" opacity="0.82" clip-path="url(#lanternOval)" preserveAspectRatio="xMidYMid slice"/>
       <line x1="1340" y1="4" x2="1340" y2="10" stroke="var(--gold)" stroke-width="1.5" opacity="0.83"/>
-      <image href="https://res.cloudinary.com/dhqtiaubo/image/upload/v1784763276/lantern_nnxotv.webp" x="1331" y="10" width="18" height="23" opacity="0.68" clip-path="url(#lanternOval)" preserveAspectRatio="xMidYMid slice"/>
+      <image href="https://res.cloudinary.com/dhqtiaubo/image/upload/f_auto,q_auto,w_150/v1784763276/lantern_nnxotv.webp" x="1331" y="10" width="18" height="23" opacity="0.68" clip-path="url(#lanternOval)" preserveAspectRatio="xMidYMid slice"/>
     </svg>
 </div>
 <footer>
@@ -352,8 +387,8 @@
         <h4>Explore</h4>
         <a href="index.html">Home</a>
         <a href="tickets.html">Tickets &amp; Registration</a>
-        <a href="sponsorship.html">Sponsorship</a>
-        <a href="auction-giving.html">Auction &amp; Giving</a>
+        <a href="sponsorship.html">Event Sponsorship</a>
+        <a href="auction-giving.html">Sponsor an Item</a>
         <a href="event-info.html">Event Info</a>
       </div>
       <div class="footer-col">
