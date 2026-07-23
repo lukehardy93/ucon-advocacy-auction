@@ -23,17 +23,36 @@
     });
   }
 
-  /* ---- Desktop "About" dropdown ----
+  /* ---- Desktop nav dropdowns ("Sponsor an Item", "About") ----
      CSS handles hover/focus-within already; this adds click-to-toggle for
-     touch devices and closes the menu on outside click or Escape. ---- */
+     touch devices and closes the menu on outside click or Escape.
+     Some toggles (e.g. "Sponsor an Item") are real links to their own page,
+     so only their chevron button should intercept the click to peek the
+     submenu - the rest of the label should navigate normally. Toggles with
+     no page of their own (e.g. "About") keep the old behavior: the whole
+     button opens/closes the submenu. ---- */
   document.querySelectorAll(".nav-dropdown").forEach(function (dd) {
     var toggle = dd.querySelector(".nav-dropdown-toggle");
     if (!toggle) return;
-    toggle.addEventListener("click", function (e) {
+    var chevBtn = dd.querySelector(".nav-dropdown-chev-btn");
+    function toggleOpen(e) {
       e.stopPropagation();
+      e.preventDefault();
       var isOpen = dd.classList.toggle("open");
       toggle.setAttribute("aria-expanded", isOpen ? "true" : "false");
-    });
+    }
+    if (chevBtn) {
+      chevBtn.addEventListener("click", toggleOpen);
+      chevBtn.addEventListener("keydown", function (e) {
+        if (e.key === "Enter" || e.key === " ") toggleOpen(e);
+      });
+    } else {
+      toggle.addEventListener("click", function (e) {
+        e.stopPropagation();
+        var isOpen = dd.classList.toggle("open");
+        toggle.setAttribute("aria-expanded", isOpen ? "true" : "false");
+      });
+    }
   });
   document.addEventListener("click", function (e) {
     document.querySelectorAll(".nav-dropdown.open").forEach(function (dd) {
