@@ -318,7 +318,9 @@ section{padding:88px 0;}
 
 /* ---------- AUCTION ITEM PLACEHOLDER CARDS ---------- */
 .item-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:1px;margin-top:36px;background:var(--line);border:1px solid var(--line);}
-.item-card{background:var(--paper);position:relative;}
+.item-card{background:var(--paper);position:relative;display:block;transition:box-shadow .2s,transform .2s;}
+a.item-card:hover{box-shadow:var(--shadow-sm);transform:translateY(-2px);}
+.item-card.sold{cursor:default;}
 .item-card .thumb{aspect-ratio:4/3;background:var(--cream2);display:flex;align-items:center;justify-content:center;color:var(--gold);font-size:26px;border-bottom:1px solid var(--line);overflow:hidden;}
 .item-card.sold .thumb{filter:grayscale(1) brightness(.92);}
 .item-card.sold .val{color:var(--mut);text-decoration:line-through;}
@@ -329,7 +331,11 @@ section{padding:88px 0;}
 .item-card .body{padding:18px 20px;}
 .item-card .lbl{font-family:var(--font-body);font-size:10px;font-weight:600;letter-spacing:1.6px;text-transform:uppercase;color:var(--mut);}
 .item-card .name{font-family:var(--font-head);font-size:16px;font-weight:700;color:var(--ink);margin-top:6px;}
-.item-card .val{font-family:var(--font-body);font-size:12px;font-weight:600;color:var(--goldD);margin-top:8px;}
+.item-card .val{font-family:var(--font-body);font-size:18px;font-weight:700;color:var(--goldD);margin-top:10px;}
+.item-card .item-cta{display:flex;align-items:center;gap:7px;margin-top:14px;padding-top:14px;border-top:1px solid var(--line);font-family:var(--font-body);font-size:12px;font-weight:700;letter-spacing:1.4px;text-transform:uppercase;color:var(--teal);}
+.item-card .item-cta i{font-size:11px;transition:transform .2s ease;}
+a.item-card:hover .item-cta{color:var(--goldD);}
+a.item-card:hover .item-cta i{transform:translateX(5px);}
 
 /* ---------- FAQ ---------- */
 .faq-quick{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;margin-bottom:30px;background:var(--line);border:1px solid var(--line);}
