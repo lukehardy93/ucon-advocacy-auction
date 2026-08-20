@@ -1,5 +1,5 @@
 /* ============================================================
-   2026 UCON Advocacy Auction — "Among the Lanterns"
+   2026 UCON Advocacy Auction — "Hong Kong After Dark"
    Shared Stylesheet (all 5 pages import this single file)
    Theme v2: black-tie museum-gala refinement — near-black ink,
    muted antique gold, high-contrast serif headlines, hairline
@@ -10,7 +10,8 @@
 
 :root{
   /* Core palette — event-branded: the deep teal night-sky and warm lantern
-     ember from the "Among the Lanterns" key art are woven back in as the
+     ember from the original "Among the Lanterns" key art are kept as the
+     visual base while the event theme is now "Hong Kong After Dark" —
      dark base and a sparing accent, kept quiet enough not to disturb the
      gala restraint. */
   --teal:#0B1E20;        /* deep teal-black ink — hero/footer/nav/dark panels */
