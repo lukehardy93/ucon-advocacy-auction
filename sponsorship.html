@@ -26,6 +26,9 @@
 <style>
 /* Sponsorship-page-only helpers, scoped with .spon- prefix per project convention */
 .spon-tier-count{font-size:15px;color:var(--mut);margin-top:10px;}
+.sponsor-card-company{display:flex;align-items:center;gap:8px;font-family:var(--font-body);font-size:12.5px;font-weight:600;letter-spacing:.3px;color:var(--goldD);margin:-8px 0 16px;}
+.sponsor-card-company i{font-size:11px;}
+.sponsor-card.exclusive .sponsor-card-company{color:var(--lantern);}
 .spon-logo-intro{max-width:680px;}
 .spon-annual-wall{margin-top:32px;background:var(--paper);border:1px solid var(--line);border-radius:16px;padding:20px;box-shadow:var(--shadow-sm);}
 .spon-annual-wall img{display:block;width:100%;height:auto;border-radius:8px;}
@@ -104,6 +107,9 @@
     <div class="page-hero-scrim" aria-hidden="true"></div>
     <div class="page-hero-glow a"></div>
     <div class="page-hero-glow b"></div>
+    <div class="page-hero-glow c"></div>
+    <div class="page-hero-glow d"></div>
+    <div class="page-hero-glow e"></div>
     <div class="page-hero-content">
       <span class="eyebrow script">Partner with us</span>
       <h1>Event Sponsorship Opportunities</h1>
@@ -312,40 +318,42 @@
     <div class="container">
       <div class="section-label"><span class="dot"></span><span>Sponsorship Tiers</span></div>
       <h2 class="section-title">Choose Your Level of Impact</h2>
-      <p class="section-sub">All 14 sponsorship tiers below, from our exclusive Arigatō Sponsor down to the Bamboo Benefactor Sponsor. Perks and availability are listed for each.</p>
+      <p class="section-sub">All 14 sponsorship tiers below, from our top-tier Dragon Sponsor down to the Bamboo Sponsor. Perks and availability are listed for each.</p>
 
       <div class="sponsor-card-grid">
 
-        <div class="sponsor-card">
+        <div class="sponsor-card soldout">
           <div class="sponsor-card-header">
             <div>
-              <h3 class="sponsor-card-name">Arigatō Sponsor</h3>
+              <h3 class="sponsor-card-name">Dragon Sponsor</h3>
               <div class="sponsor-card-price">$10,000</div>
             </div>
-            <span class="sponsor-card-status status-exclusive">Exclusive · 1 Available</span>
+            <span class="sponsor-card-status status-soldout">Sold Out</span>
           </div>
+          <p class="sponsor-card-company"><i class="fa-solid fa-circle-check" aria-hidden="true"></i>Sponsored by D N B Infrastructure, Inc.</p>
           <ul class="sponsor-card-benefits">
             <li>2 event tickets</li>
             <li>Logo on thank-you kit dropped in all guests' hotel rooms</li>
             <li>Full-page ad in Auction Program</li>
             <li>Logo on event signage, emails, and event PowerPoint</li>
           </ul>
-          <a class="sponsor-card-cta" href="https://www.unitedcontractors.org/event-registration/2026-advocacy-auction-sponsorship-registration">Become the Arigatō Sponsor <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+          <span class="sponsor-card-cta" style="opacity:.55;cursor:default;pointer-events:none;">Sold Out <i class="fa-solid fa-check" aria-hidden="true"></i></span>
         </div>
 
         <div class="sponsor-card">
           <div class="sponsor-card-header">
             <div>
-              <h3 class="sponsor-card-name">Dragon Sponsor</h3>
+              <h3 class="sponsor-card-name">Tiger Sponsor</h3>
               <div class="sponsor-card-price">$7,500</div>
             </div>
-            <span class="sponsor-card-status status-available">Open</span>
+            <span class="sponsor-card-status status-available">Multiple Available</span>
           </div>
+          <p class="sponsor-card-company"><i class="fa-solid fa-circle-check" aria-hidden="true"></i>Sponsored by O.C. Jones &amp; Sons, Inc. &amp; Kiewit Infrastructure West Co.</p>
           <ul class="sponsor-card-benefits">
             <li>10 event tickets (1 full table)</li>
             <li>Full-page advertisement in Auction Program</li>
           </ul>
-          <a class="sponsor-card-cta" href="https://www.unitedcontractors.org/event-registration/2026-advocacy-auction-sponsorship-registration">Become the Dragon Sponsor <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+          <a class="sponsor-card-cta" href="https://www.unitedcontractors.org/event-registration/2026-advocacy-auction-sponsorship-registration">Become a Tiger Sponsor <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
         </div>
 
         <div class="sponsor-card">
@@ -403,18 +411,19 @@
         <div class="sponsor-card">
           <div class="sponsor-card-header">
             <div>
-              <h3 class="sponsor-card-name">Lantern Night Sponsor</h3>
+              <h3 class="sponsor-card-name">Lantern Nightlight Sponsor</h3>
               <div class="sponsor-card-price">$5,000</div>
             </div>
             <span class="sponsor-card-status status-exclusive">Exclusive</span>
           </div>
+          <p class="sponsor-card-company"><i class="fa-solid fa-circle-check" aria-hidden="true"></i>Sponsored by Chrisp Company</p>
           <ul class="sponsor-card-benefits">
             <li>2 event tickets</li>
             <li>Branded flip-flops handed out at the event and afterparty</li>
             <li>½-page ad in Auction Program</li>
             <li>Logo on signage, emails, PowerPoint</li>
           </ul>
-          <a class="sponsor-card-cta" href="https://www.unitedcontractors.org/event-registration/2026-advocacy-auction-sponsorship-registration">Become the Lantern Night Sponsor <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+          <a class="sponsor-card-cta" href="https://www.unitedcontractors.org/event-registration/2026-advocacy-auction-sponsorship-registration">Become the Lantern Nightlight Sponsor <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
         </div>
 
         <div class="sponsor-card">
@@ -441,8 +450,9 @@
               <h3 class="sponsor-card-name">Lotus Sponsor</h3>
               <div class="sponsor-card-price">$4,000</div>
             </div>
-            <span class="sponsor-card-status status-available">Open</span>
+            <span class="sponsor-card-status status-available">Multiple Available</span>
           </div>
+          <p class="sponsor-card-company"><i class="fa-solid fa-circle-check" aria-hidden="true"></i>Sponsored by Anvil Builders Inc.</p>
           <ul class="sponsor-card-benefits">
             <li>6 event tickets</li>
             <li>½-page ad in Auction Program</li>
@@ -471,7 +481,7 @@
               <h3 class="sponsor-card-name">Prosperity Sponsor</h3>
               <div class="sponsor-card-price">$2,500</div>
             </div>
-            <span class="sponsor-card-status status-available">Open</span>
+            <span class="sponsor-card-status status-available">Multiple Available</span>
           </div>
           <ul class="sponsor-card-benefits">
             <li>2 event tickets</li>
@@ -488,6 +498,7 @@
             </div>
             <span class="sponsor-card-status status-available">2 Available</span>
           </div>
+          <p class="sponsor-card-company"><i class="fa-solid fa-circle-check" aria-hidden="true"></i>Sponsored by Sierra Mountain Construction, Inc.</p>
           <ul class="sponsor-card-benefits">
             <li>Company logo on reception cocktail napkins (bar &amp; passed appetizers)</li>
             <li>Company logo on event emails</li>
@@ -501,8 +512,9 @@
               <h3 class="sponsor-card-name">Dinner Wine Sponsor</h3>
               <div class="sponsor-card-price">$2,000</div>
             </div>
-            <span class="sponsor-card-status status-available">6 Available</span>
+            <span class="sponsor-card-status status-available">5 of 6 Available</span>
           </div>
+          <p class="sponsor-card-company"><i class="fa-solid fa-circle-check" aria-hidden="true"></i>Sponsored by Talus Construction, Inc.</p>
           <ul class="sponsor-card-benefits">
             <li>Company logo placed with wine at each dinner table</li>
             <li>Company logo in Auction Program</li>
@@ -516,8 +528,9 @@
               <h3 class="sponsor-card-name">Festival Bar Sponsor</h3>
               <div class="sponsor-card-price">$1,500</div>
             </div>
-            <span class="sponsor-card-status status-available">Open</span>
+            <span class="sponsor-card-status status-available">Multiple Available</span>
           </div>
+          <p class="sponsor-card-company"><i class="fa-solid fa-circle-check" aria-hidden="true"></i>Sponsored by Carpenter Rigging Group</p>
           <ul class="sponsor-card-benefits">
             <li>Company logo on signage at bars</li>
             <li>Business-card ad in Auction Program</li>
@@ -528,15 +541,16 @@
         <div class="sponsor-card">
           <div class="sponsor-card-header">
             <div>
-              <h3 class="sponsor-card-name">Bamboo Benefactor Sponsor</h3>
+              <h3 class="sponsor-card-name">Bamboo Sponsor</h3>
               <div class="sponsor-card-price">$850</div>
             </div>
-            <span class="sponsor-card-status status-available">Open</span>
+            <span class="sponsor-card-status status-available">Multiple Available</span>
           </div>
+          <p class="sponsor-card-company"><i class="fa-solid fa-circle-check" aria-hidden="true"></i>Sponsored by JMB Construction, Inc.</p>
           <ul class="sponsor-card-benefits">
             <li>Business-card advertisement in Auction Program</li>
           </ul>
-          <a class="sponsor-card-cta" href="https://www.unitedcontractors.org/event-registration/2026-advocacy-auction-sponsorship-registration">Become a Bamboo Benefactor Sponsor <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+          <a class="sponsor-card-cta" href="https://www.unitedcontractors.org/event-registration/2026-advocacy-auction-sponsorship-registration">Become a Bamboo Sponsor <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
         </div>
 
         <div class="sponsor-card" style="background:var(--cream2);display:flex;flex-direction:column;justify-content:center;">

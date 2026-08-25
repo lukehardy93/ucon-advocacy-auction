@@ -25,6 +25,15 @@
 <link rel="stylesheet" href="css/auction.css">
 <style>
 /* Impact page-only styles, prefixed .imp- per project convention */
+.imp-win-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.08);margin-top:36px;}
+.imp-win-card{background:var(--teal2);padding:32px 26px;transition:background .2s;}
+.imp-win-card:hover{background:var(--tealL);}
+.imp-win-ico{width:44px;height:44px;border-radius:50%;background:rgba(199,166,91,.14);display:flex;align-items:center;justify-content:center;margin-bottom:16px;}
+.imp-win-ico i{color:var(--lantern);font-size:18px;}
+.imp-win-card h4{font-family:var(--font-head);font-size:18px;font-weight:700;color:#fff;margin-bottom:8px;line-height:1.3;}
+.imp-win-card p{font-family:var(--font-body);font-weight:300;font-size:14.5px;color:#C9C2AE;line-height:1.6;margin:0;}
+@media(max-width:900px){.imp-win-grid{grid-template-columns:1fr 1fr;}}
+@media(max-width:560px){.imp-win-grid{grid-template-columns:1fr;}}
 .imp-hero{position:relative;padding:150px 24px 90px;text-align:center;background:radial-gradient(ellipse at 50% 0%,var(--teal2) 0%,var(--teal) 66%);overflow:hidden;}
 .imp-hero-content{position:relative;z-index:2;max-width:760px;margin:0 auto;}
 .imp-hero .eyebrow{color:var(--lantern);}
@@ -336,18 +345,45 @@
         <span class="script">2025 Advocacy Auction</span>
         <blockquote>Thank you to all the members who attended and supported our 2025 Advocacy Auction. A huge thank you to last year&rsquo;s sponsors, donors, attendees, and bidders: your support and generosity helped raise a record-breaking $375K+ for UCON&rsquo;s Government Advocacy program.</blockquote>
       </div>
+    </div>
+  </section>
 
-      <div class="imp-wins" style="margin-top:36px;">
-        <h3 style="font-family:var(--font-head);font-size:19px;font-weight:700;margin-bottom:14px;">Recent Advocacy Wins</h3>
-        <p style="font-family:var(--font-body);color:var(--mut);margin-bottom:18px;max-width:720px;">UCON's advocacy program has delivered some of the most significant legislative, funding, and regulatory wins. Thanks to your support, our political advocacy has delivered key victories for union contractors across California, including:</p>
-        <ul class="imp-wins-list" style="list-style:none;padding:0;display:grid;gap:14px;max-width:820px;">
-          <li style="display:flex;gap:12px;align-items:flex-start;"><i class="fa-solid fa-circle-check" style="color:var(--gold);margin-top:5px;flex-shrink:0;" aria-hidden="true"></i><span>More than $100 billion in federal, state, and local infrastructure funding to support critical projects.</span></li>
-          <li style="display:flex;gap:12px;align-items:flex-start;"><i class="fa-solid fa-circle-check" style="color:var(--gold);margin-top:5px;flex-shrink:0;" aria-hidden="true"></i><span>Capped retention at 5% on public and private works projects, improving cash flow and reducing financial strain on contractors.</span></li>
-          <li style="display:flex;gap:12px;align-items:flex-start;"><i class="fa-solid fa-circle-check" style="color:var(--gold);margin-top:5px;flex-shrink:0;" aria-hidden="true"></i><span>Advanced legislation to protect fair and timely payment for change orders on public works projects.</span></li>
-          <li style="display:flex;gap:12px;align-items:flex-start;"><i class="fa-solid fa-circle-check" style="color:var(--gold);margin-top:5px;flex-shrink:0;" aria-hidden="true"></i><span>Authorized speed cameras in active construction work zones to improve safety for workers.</span></li>
-          <li style="display:flex;gap:12px;align-items:flex-start;"><i class="fa-solid fa-circle-check" style="color:var(--gold);margin-top:5px;flex-shrink:0;" aria-hidden="true"></i><span>Defeated legislation that would have significantly exposed contractors to unnecessary fines, penalties, and enforcement risk.</span></li>
-          <li style="display:flex;gap:12px;align-items:flex-start;"><i class="fa-solid fa-circle-check" style="color:var(--gold);margin-top:5px;flex-shrink:0;" aria-hidden="true"></i><span>Secured more than $6 million to help address the severe permitting backlog at the Bay Area Air District.</span></li>
-        </ul>
+  <section class="tint-teal">
+    <div class="container">
+      <div class="section-label"><span class="dot"></span><span>Wins for Union Contractors</span></div>
+      <h2 class="section-title">Recent Advocacy Wins</h2>
+      <p class="section-sub">UCON's advocacy program has delivered some of the most significant legislative, funding, and regulatory wins in the industry. Thanks to your support, our political advocacy has delivered key victories for union contractors across California.</p>
+      <div class="imp-win-grid">
+        <div class="imp-win-card">
+          <div class="imp-win-ico"><i class="fa-solid fa-money-bill-trend-up" aria-hidden="true"></i></div>
+          <h4>$100B+ in Infrastructure Funding</h4>
+          <p>Secured in federal, state, and local funding to support critical construction projects statewide.</p>
+        </div>
+        <div class="imp-win-card">
+          <div class="imp-win-ico"><i class="fa-solid fa-hand-holding-dollar" aria-hidden="true"></i></div>
+          <h4>Retention Capped at 5%</h4>
+          <p>On public and private works projects, improving cash flow and reducing financial strain on contractors.</p>
+        </div>
+        <div class="imp-win-card">
+          <div class="imp-win-ico"><i class="fa-solid fa-file-invoice-dollar" aria-hidden="true"></i></div>
+          <h4>Change Order Payment Protections</h4>
+          <p>Advanced legislation to protect fair and timely payment for change orders on public works projects.</p>
+        </div>
+        <div class="imp-win-card">
+          <div class="imp-win-ico"><i class="fa-solid fa-triangle-exclamation" aria-hidden="true"></i></div>
+          <h4>Work Zone Speed Cameras</h4>
+          <p>Authorized cameras in active construction work zones to improve safety for workers.</p>
+        </div>
+        <div class="imp-win-card">
+          <div class="imp-win-ico"><i class="fa-solid fa-shield-halved" aria-hidden="true"></i></div>
+          <h4>Defeated Harmful Legislation</h4>
+          <p>Stopped bills that would have significantly exposed contractors to unnecessary fines, penalties, and enforcement risk.</p>
+        </div>
+        <div class="imp-win-card">
+          <div class="imp-win-ico"><i class="fa-solid fa-building-shield" aria-hidden="true"></i></div>
+          <h4>$6M+ for Permitting Backlog</h4>
+          <p>Secured funding to help address the severe permitting backlog at the Bay Area Air District.</p>
+        </div>
       </div>
     </div>
   </section>
