@@ -34,11 +34,8 @@
 .imp-win-card p{font-family:var(--font-body);font-weight:300;font-size:14.5px;color:#C9C2AE;line-height:1.6;margin:0;}
 @media(max-width:900px){.imp-win-grid{grid-template-columns:1fr 1fr;}}
 @media(max-width:560px){.imp-win-grid{grid-template-columns:1fr;}}
-.imp-hero{position:relative;padding:150px 24px 90px;text-align:center;background:radial-gradient(ellipse at 50% 0%,var(--teal2) 0%,var(--teal) 66%);overflow:hidden;}
-.imp-hero-content{position:relative;z-index:2;max-width:760px;margin:0 auto;}
-.imp-hero .eyebrow{color:var(--lantern);}
-.imp-hero h1{font-family:var(--font-head);font-weight:800;font-size:clamp(34px,5vw,56px);color:#fff;margin-top:10px;}
-.imp-hero p{color:#C9C2AE;font-size:17px;font-weight:300;margin-top:16px;max-width:600px;margin-left:auto;margin-right:auto;}
+/* Hero now uses the shared .page-hero pattern (see auction.css) to match
+   Tickets, Sponsorship, Donate an Item, and Event Info. */
 .imp-video-frame{position:relative;width:100%;max-width:860px;margin:0 auto;aspect-ratio:16/9;background:var(--teal2);border:1px solid var(--lineDark);border-radius:16px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;overflow:hidden;}
 .imp-video-frame i{font-size:40px;color:var(--lantern);opacity:.8;}
 .imp-video-frame p{color:#D9D3C4;font-size:15px;max-width:380px;text-align:center;margin:0;}
@@ -109,12 +106,18 @@
 
 <main id="main-content">
 
-  <section class="imp-hero">
-    <div class="imp-hero-content">
+  <section class="page-hero">
+    <div class="page-hero-content">
       <span class="eyebrow script">Why it matters</span>
       <h1>Our Impact</h1>
       <p>Every ticket, sponsorship, and bid at Hong Kong After Dark goes directly to UCON's Government Advocacy program: building coalitions, driving political support, and championing the ballot measures and regulations that shape our industry.</p>
     </div>
+
+    <div class="page-hero-glow a"></div>
+    <div class="page-hero-glow b"></div>
+    <div class="page-hero-glow c"></div>
+    <div class="page-hero-glow d"></div>
+    <div class="page-hero-glow e"></div>
 
     <div class="hero-skyline" aria-hidden="true">
   <svg viewBox="0 0 1400 60" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
