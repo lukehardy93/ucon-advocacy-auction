@@ -40,6 +40,13 @@
 .imp-video-frame i{font-size:40px;color:var(--lantern);opacity:.8;}
 .imp-video-frame p{color:#D9D3C4;font-size:15px;max-width:380px;text-align:center;margin:0;}
 .imp-video-frame iframe,.imp-video-frame video{position:absolute;inset:0;width:100%;height:100%;border:0;object-fit:cover;}
+.imp-hr-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line);margin-top:32px;}
+.imp-hr-card{background:var(--paper);padding:24px 22px;}
+.imp-hr-name{font-family:var(--font-head);font-size:17px;font-weight:700;color:var(--ink);}
+.imp-hr-company{font-family:var(--font-body);font-size:13px;color:var(--ink2);margin-top:3px;}
+.imp-hr-amt{font-family:var(--font-head);font-size:15px;font-weight:700;color:var(--goldD);margin-top:12px;}
+@media(max-width:900px){.imp-hr-grid{grid-template-columns:1fr 1fr;}}
+@media(max-width:560px){.imp-hr-grid{grid-template-columns:1fr;}}
 </style>
 </head>
 <body>
@@ -383,7 +390,7 @@
           <div class="lbl">Raised in a single night in 2025, a record for the auction</div>
         </div>
         <div class="about-stat">
-          <div class="num">$410K</div>
+          <div class="num">$400K</div>
           <div class="lbl">2026 goal &mdash; help us set a new record</div>
         </div>
       </div>
@@ -394,10 +401,63 @@
     <div class="container">
       <div class="section-label"><span class="dot"></span><span>Top Supporters</span></div>
       <h2 class="section-title">2025 High Rollers Recognition</h2>
-      <p class="section-sub">A special thank-you to the members, sponsors, and bidders whose generosity led the way at the 2025 Advocacy Auction.</p>
-      <div class="note-box">
-        <h4>Names Coming Soon</h4>
-        <p>We're finalizing the list of 2025's top donors and will recognize them here by name and company shortly. Check back soon to see this year's High Rollers.</p>
+      <p class="section-sub">A special thank-you to the members, sponsors, and bidders whose generosity led the way at the 2025 Advocacy Auction &mdash; recognizing everyone who gave more than $10,000 over the course of the night.</p>
+      <div class="imp-hr-grid">
+        <div class="imp-hr-card">
+          <div class="imp-hr-name">Matt Mascaro</div>
+          <div class="imp-hr-company">Gallagher &amp; Burk, Inc.</div>
+          <div class="imp-hr-amt">$22,500</div>
+        </div>
+        <div class="imp-hr-card">
+          <div class="imp-hr-name">Rob Bilotti</div>
+          <div class="imp-hr-company">Chrisp Company</div>
+          <div class="imp-hr-amt">$22,500</div>
+        </div>
+        <div class="imp-hr-card">
+          <div class="imp-hr-name">Erin Salinas</div>
+          <div class="imp-hr-company">Gallagher &amp; Burk, Inc.</div>
+          <div class="imp-hr-amt">$14,000</div>
+        </div>
+        <div class="imp-hr-card">
+          <div class="imp-hr-name">Jim Gallagher</div>
+          <div class="imp-hr-company">Teichert Construction</div>
+          <div class="imp-hr-amt">$14,000</div>
+        </div>
+        <div class="imp-hr-card">
+          <div class="imp-hr-name">Erika Bailey</div>
+          <div class="imp-hr-company">DeSilva Gates Construction, LLC</div>
+          <div class="imp-hr-amt">$14,000</div>
+        </div>
+        <div class="imp-hr-card">
+          <div class="imp-hr-name">Robert Chrisp</div>
+          <div class="imp-hr-company">Chrisp Company</div>
+          <div class="imp-hr-amt">$14,000</div>
+        </div>
+        <div class="imp-hr-card">
+          <div class="imp-hr-name">Scott Thomas</div>
+          <div class="imp-hr-company">Gallagher &amp; Burk, Inc.</div>
+          <div class="imp-hr-amt">$12,000</div>
+        </div>
+        <div class="imp-hr-card">
+          <div class="imp-hr-name">Kevin Delaney</div>
+          <div class="imp-hr-company">Teichert Construction</div>
+          <div class="imp-hr-amt">$12,000</div>
+        </div>
+        <div class="imp-hr-card">
+          <div class="imp-hr-name">Michael Gates</div>
+          <div class="imp-hr-company">DeSilva Gates Construction, LLC</div>
+          <div class="imp-hr-amt">$10,000</div>
+        </div>
+        <div class="imp-hr-card">
+          <div class="imp-hr-name">Lisa de Freitas Sundberg</div>
+          <div class="imp-hr-company">Platinum Pipeline, Inc.</div>
+          <div class="imp-hr-amt">$10,000</div>
+        </div>
+        <div class="imp-hr-card">
+          <div class="imp-hr-name">Sean Castillo</div>
+          <div class="imp-hr-company">Toro Enterprises, Inc.</div>
+          <div class="imp-hr-amt">$10,000</div>
+        </div>
       </div>
 
       <div class="value-quote" style="margin-top:28px;">
@@ -627,9 +687,7 @@
         <h4>Contact</h4>
         <a href="mailto:events@unitedcontractors.org">events@unitedcontractors.org</a>
         <a href="tel:9258557900">(925) 855-7900</a>
-        <a href="https://www.facebook.com/UnitedContrs" target="_blank" rel="noopener">Facebook</a>
         <a href="https://www.linkedin.com/company/united-contractors/" target="_blank" rel="noopener">LinkedIn</a>
-        <a href="https://www.instagram.com/unitedcontractors" target="_blank" rel="noopener">Instagram</a>
       </div>
     </div>
     <div class="footer-bottom">
