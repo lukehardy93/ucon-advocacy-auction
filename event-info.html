@@ -27,6 +27,10 @@
 /* Event Info page-specific styles, scoped with .evt- prefix, nothing here
    redefines shared classes from auction.css */
 .evt-section-inner{max-width:900px;}
+/* Two Ways to Bid only has 2 cards, not 3 - force 2 columns so the shared
+   .card-grid background-line doesn't peek through as an empty tan cell */
+.evt-two-up{grid-template-columns:repeat(2,1fr)!important;}
+@media(max-width:560px){.evt-two-up{grid-template-columns:1fr!important;}}
 .evt-jump-nav{background:var(--paper);border-bottom:1px solid var(--line);padding:16px 0;position:sticky;top:104px;z-index:50;}
 .evt-jump-nav-inner{display:flex;align-items:center;justify-content:center;gap:12px;flex-wrap:wrap;}
 .evt-jump-label{font-family:var(--font-body);font-weight:600;font-size:13px;letter-spacing:.8px;text-transform:uppercase;color:var(--ink2);}
@@ -414,7 +418,7 @@
       <div class="section-label"><span class="dot"></span><span>How It Works</span></div>
       <h2 class="section-title">Two Ways to Bid</h2>
       <p class="section-sub">The neon is glowing, the wine is poured, and somewhere across the room, someone just got outbid. Bidding builds all evening long in two distinct formats: check the times below so you don't miss your moment to raise a paddle.</p>
-      <div class="card-grid">
+      <div class="card-grid evt-two-up">
         <div class="feature-card">
           <div class="feature-ico"><i class="fa-solid fa-clipboard-list" aria-hidden="true"></i></div>
           <h3>Silent Auction</h3>
@@ -429,16 +433,16 @@
       <div class="evt-carousel" data-evt-carousel aria-roledescription="carousel" aria-label="Photos from past Advocacy Auctions">
         <div class="evt-carousel-track">
           <figure class="evt-carousel-slide is-active">
-            <img src="https://res.cloudinary.com/dhqtiaubo/image/upload/f_auto,q_auto,w_800/v1784321474/UCON-2025-Advocacy-Auction-230-2611_moxzwz.jpg" alt="Guests bidding at the 2025 UCON Advocacy Auction" loading="lazy">
+            <img src="https://res.cloudinary.com/dhqtiaubo/image/upload/f_auto,q_auto,w_800/v1787870090/UCON-2024-Annual-Auction-141-0710_nih3dc.jpg" alt="Guests holding their paddle number at the 2024 Annual Auction" loading="lazy">
           </figure>
           <figure class="evt-carousel-slide">
-            <img src="https://res.cloudinary.com/dhqtiaubo/image/upload/f_auto,q_auto,w_800/v1784321515/UCON-2025-Advocacy-Auction-154-2253_neqqbm.jpg" alt="Guests raising paddles during the live auction" loading="lazy">
+            <img src="https://res.cloudinary.com/dhqtiaubo/image/upload/f_auto,q_auto,w_800/v1787870094/UCON-2025-Advocacy-Auction-212-2531_nzotyo.jpg" alt="Guests holding their paddle number at the 2025 Advocacy Auction" loading="lazy">
           </figure>
           <figure class="evt-carousel-slide">
-            <img src="https://res.cloudinary.com/dhqtiaubo/image/upload/f_auto,q_auto,w_800/v1784321487/UCON-2025-Advocacy-Auction-223-2582_xexlwh.jpg" alt="Guests at the 2025 Advocacy Auction" loading="lazy">
+            <img src="https://res.cloudinary.com/dhqtiaubo/image/upload/f_auto,q_auto,w_800/v1787870099/UCON-2025-Advocacy-Auction-209-0230_h0dxnd.jpg" alt="Guests holding their paddle number at the 2025 Advocacy Auction" loading="lazy">
           </figure>
         </div>
-        <p class="evt-carousel-caption" data-evt-carousel-caption>Guests bidding at the 2025 UCON Advocacy Auction</p>
+        <p class="evt-carousel-caption" data-evt-carousel-caption>Guests holding their paddle number at the 2024 Annual Auction</p>
         <div class="evt-carousel-dots" role="tablist" aria-label="Choose slide">
           <button type="button" class="evt-carousel-dot is-active" role="tab" aria-selected="true" aria-label="Slide 1" data-index="0"></button>
           <button type="button" class="evt-carousel-dot" role="tab" aria-selected="false" aria-label="Slide 2" data-index="1"></button>
@@ -545,7 +549,7 @@
           <h4>Book by phone</h4>
           <p><a href="tel:15108433000">(510) 843-3000</a>. Mention "UCON 26 Advocacy Auction" when booking.</p>
         </div>
-        <div class="info-cell">
+        <div class="info-cell wide">
           <h4>If the block sells out</h4>
           <p>A few nearby options:<br>
           <a href="https://www.marriott.com/en-us/hotels/oakrr-residence-inn-berkeley/overview/" target="_blank" rel="noopener">Residence Inn by Marriott Berkeley</a><br>

@@ -40,13 +40,11 @@
 .imp-video-frame i{font-size:40px;color:var(--lantern);opacity:.8;}
 .imp-video-frame p{color:#D9D3C4;font-size:15px;max-width:380px;text-align:center;margin:0;}
 .imp-video-frame iframe,.imp-video-frame video{position:absolute;inset:0;width:100%;height:100%;border:0;object-fit:cover;}
-.imp-hr-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line);margin-top:32px;}
-.imp-hr-card{background:var(--paper);padding:24px 22px;}
+.imp-hr-grid{display:flex;flex-wrap:wrap;margin-top:32px;border-top:1px solid var(--line);border-left:1px solid var(--line);}
+.imp-hr-card{background:var(--paper);padding:24px 22px;flex:1 1 260px;border-right:1px solid var(--line);border-bottom:1px solid var(--line);}
 .imp-hr-name{font-family:var(--font-head);font-size:17px;font-weight:700;color:var(--ink);}
 .imp-hr-company{font-family:var(--font-body);font-size:13px;color:var(--ink2);margin-top:3px;}
 .imp-hr-amt{font-family:var(--font-head);font-size:15px;font-weight:700;color:var(--goldD);margin-top:12px;}
-@media(max-width:900px){.imp-hr-grid{grid-template-columns:1fr 1fr;}}
-@media(max-width:560px){.imp-hr-grid{grid-template-columns:1fr;}}
 </style>
 </head>
 <body>

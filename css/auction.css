@@ -254,6 +254,7 @@ section{padding:88px 0;}
 /* ---------- INFO GRID ---------- */
 .info-grid{display:grid;grid-template-columns:1fr 1fr;gap:1px;margin-top:36px;background:var(--line);border:1px solid var(--line);}
 .info-cell{background:var(--paper);padding:28px;}
+.info-cell.wide{grid-column:1/-1;}
 .info-cell h4{font-family:var(--font-body);font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--goldD);margin-bottom:8px;font-weight:500;}
 .info-cell p{font-size:17px;color:var(--ink);}
 .info-cell a{color:var(--goldD);text-decoration:underline;text-underline-offset:3px;}
@@ -311,8 +312,8 @@ section{padding:88px 0;}
 .note-box a{color:var(--goldD);text-decoration:underline;text-underline-offset:3px;}
 
 /* ---------- SPONSOR CARDS ---------- */
-.sponsor-card-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:1px;margin-top:40px;background:var(--line);border:1px solid var(--line);}
-.sponsor-card{background:var(--paper);padding:30px 32px;}
+.sponsor-card-grid{display:flex;flex-wrap:wrap;margin-top:40px;border-top:1px solid var(--line);border-left:1px solid var(--line);}
+.sponsor-card{background:var(--paper);padding:30px 32px;flex:1 1 320px;border-right:1px solid var(--line);border-bottom:1px solid var(--line);}
 .sponsor-card.exclusive{background:var(--teal);color:#fff;}
 .sponsor-card.exclusive .sponsor-card-name,.sponsor-card.exclusive .sponsor-card-price{color:#fff;}
 .sponsor-card.exclusive .sponsor-card-benefits li{color:#E7E2D3;border-bottom-color:rgba(255,255,255,.14);}
@@ -337,15 +338,14 @@ section{padding:88px 0;}
 .sponsor-card-cta:hover{background:var(--ink);color:#fff;}
 .sponsor-card.exclusive .sponsor-card-cta{border-color:var(--lantern);color:var(--lantern);}
 .sponsor-card.exclusive .sponsor-card-cta:hover{background:var(--lantern);color:var(--teal);}
-@media(max-width:768px){.sponsor-card-grid{grid-template-columns:1fr;}}
 
 /* ---------- SPONSOR LOGO WALL / PLACEHOLDERS ---------- */
 .logo-wall{display:grid;grid-template-columns:repeat(auto-fill,minmax(170px,1fr));gap:1px;margin-top:36px;background:var(--line);border:1px solid var(--line);}
 .logo-slot{background:var(--paper);border:none;height:112px;display:flex;align-items:center;justify-content:center;color:var(--mut);font-family:var(--font-body);font-size:11px;font-weight:500;letter-spacing:1px;text-transform:uppercase;text-align:center;padding:10px;}
 
 /* ---------- AUCTION ITEM PLACEHOLDER CARDS ---------- */
-.item-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:1px;margin-top:36px;background:var(--line);border:1px solid var(--line);}
-.item-card{background:var(--paper);position:relative;display:flex;flex-direction:column;transition:box-shadow .2s,transform .2s;}
+.item-grid{display:flex;flex-wrap:wrap;margin-top:36px;border-top:1px solid var(--line);border-left:1px solid var(--line);}
+.item-card{background:var(--paper);position:relative;display:flex;flex-direction:column;flex:1 1 230px;border-right:1px solid var(--line);border-bottom:1px solid var(--line);transition:box-shadow .2s,transform .2s;}
 a.item-card:hover{box-shadow:var(--shadow-sm);transform:translateY(-2px);}
 .item-card.sold{cursor:default;}
 .item-card .thumb{aspect-ratio:4/3;background:var(--cream2);display:flex;align-items:center;justify-content:center;color:var(--gold);font-size:26px;border-bottom:1px solid var(--line);overflow:hidden;}
