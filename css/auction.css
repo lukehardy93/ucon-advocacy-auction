@@ -533,3 +533,16 @@ footer{background:var(--teal);color:#B7B09C;padding:60px 0 28px;border-top:1px s
 .lightbox img{max-width:90vw;max-height:88vh;display:block;border:1px solid rgba(255,255,255,.15);}
 .lightbox-close{position:absolute;top:22px;right:26px;width:44px;height:44px;border-radius:50%;border:1px solid rgba(255,255,255,.3);background:transparent;color:#fff;font-size:22px;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:background .2s;}
 .lightbox-close:hover{background:rgba(255,255,255,.12);}
+
+/* ---------- PHOTO BELT (auto-scrolling strip) ---------- */
+.photo-belt{margin:40px 0 0;width:100vw;position:relative;left:50%;right:50%;margin-left:-50vw;margin-right:-50vw;overflow:hidden;-webkit-mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent);mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent);}
+.photo-belt-track{display:flex;gap:16px;width:max-content;animation:photoBeltScroll 42s linear infinite;}
+.photo-belt:hover .photo-belt-track{animation-play-state:paused;}
+.photo-belt-item{margin:0;flex:0 0 auto;width:300px;aspect-ratio:4/3;border-radius:10px;overflow:hidden;border:1px solid var(--line);box-shadow:var(--shadow-sm);}
+.photo-belt-item img{display:block;width:100%;height:100%;object-fit:cover;object-position:center 22%;}
+/* JS (site.js) clones the track's original item set 3 extra times (4 total),
+   so the strip is always wide enough that no viewport outruns the content;
+   the animation only needs to travel through one of those four copies. */
+@keyframes photoBeltScroll{from{transform:translateX(0);}to{transform:translateX(-25%);}}
+@media(prefers-reduced-motion:reduce){.photo-belt-track{animation:none;}}
+@media(max-width:560px){.photo-belt-item{width:190px;}}

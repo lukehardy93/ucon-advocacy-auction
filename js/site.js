@@ -165,51 +165,25 @@
     });
   }
 
-  /* ---- Simple auto-rotating photo carousel (Event Info: Two Ways to Bid) ---- */
-  document.querySelectorAll("[data-evt-carousel]").forEach(function (carousel) {
-    var slides = carousel.querySelectorAll(".evt-carousel-slide");
-    var dots = carousel.querySelectorAll(".evt-carousel-dot");
-    var caption = carousel.querySelector("[data-evt-carousel-caption]");
-    if (!slides.length) return;
-    var index = 0;
-    var timer = null;
-
-    function show(i) {
-      index = (i + slides.length) % slides.length;
-      slides.forEach(function (slide, n) {
-        slide.classList.toggle("is-active", n === index);
+  /* ---- Auto-scrolling photo belt (Home, Event Info) ----
+     Markup only needs ONE set of .photo-belt-item figures inside
+     .photo-belt-track. This clones that set 3 extra times (aria-hidden,
+     alt stripped) so the strip is always at least 4x the width of one
+     set - wide enough that no real viewport can outrun the content before
+     the CSS animation (translateX 0 -> -25%, see auction.css) loops back.
+     Without enough clones, wide viewports briefly show blank space at the
+     end of every loop. */
+  document.querySelectorAll(".photo-belt-track").forEach(function (track) {
+    var originals = Array.prototype.slice.call(track.children);
+    if (!originals.length) return;
+    for (var copy = 0; copy < 3; copy++) {
+      originals.forEach(function (item) {
+        var clone = item.cloneNode(true);
+        clone.setAttribute("aria-hidden", "true");
+        var img = clone.querySelector("img");
+        if (img) img.setAttribute("alt", "");
+        track.appendChild(clone);
       });
-      dots.forEach(function (dot, n) {
-        var isActive = n === index;
-        dot.classList.toggle("is-active", isActive);
-        dot.setAttribute("aria-selected", isActive ? "true" : "false");
-      });
-      if (caption) {
-        var img = slides[index].querySelector("img");
-        caption.textContent = (img && img.alt) || "";
-      }
-    }
-
-    function start() {
-      stop();
-      timer = setInterval(function () { show(index + 1); }, 6000);
-    }
-    function stop() {
-      if (timer) clearInterval(timer);
-      timer = null;
-    }
-
-    dots.forEach(function (dot, n) {
-      dot.addEventListener("click", function () {
-        show(n);
-        start();
-      });
-    });
-
-    if (slides.length > 1) {
-      carousel.addEventListener("mouseenter", stop);
-      carousel.addEventListener("mouseleave", start);
-      start();
     }
   });
 })();

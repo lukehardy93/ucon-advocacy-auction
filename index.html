@@ -37,14 +37,7 @@
     .home-spon-strip{flex-direction:column;text-align:center;}
     .home-spon-strip-text{max-width:none;}
   }
-  .home-photo-belt{margin:40px 0 0;width:100vw;position:relative;left:50%;right:50%;margin-left:-50vw;margin-right:-50vw;overflow:hidden;-webkit-mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent);mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent);}
-  .home-photo-belt-track{display:flex;gap:14px;width:max-content;animation:homePhotoBeltScroll 46s linear infinite;}
-  .home-photo-belt:hover .home-photo-belt-track{animation-play-state:paused;}
-  .home-photo-belt-item{margin:0;flex:0 0 auto;width:220px;height:150px;border-radius:10px;overflow:hidden;border:1px solid var(--line);box-shadow:var(--shadow-sm);}
-  .home-photo-belt-item img{display:block;width:100%;height:100%;object-fit:cover;object-position:center 22%;}
-  @keyframes homePhotoBeltScroll{from{transform:translateX(0);}to{transform:translateX(-50%);}}
-  @media(prefers-reduced-motion:reduce){.home-photo-belt-track{animation:none;}}
-  @media(max-width:560px){.home-photo-belt-item{width:150px;height:105px;}}
+  /* .photo-belt / .photo-belt-track / .photo-belt-item now live in css/auction.css (shared across pages) */
 </style>
 </head>
 <body>
@@ -393,37 +386,22 @@
         </div>
       </div>
 
-      <div class="home-photo-belt" aria-label="Photos from past Advocacy Auctions">
-        <div class="home-photo-belt-track">
-          <figure class="home-photo-belt-item">
-            <img src="https://res.cloudinary.com/dhqtiaubo/image/upload/f_auto,q_auto,w_600/v1787959389/UCON-2025-Advocacy-Auction-184-2396_mbx8m1.jpg" alt="A woman rests her hand on a fellow guest's shoulder as they share a warm laugh at the dinner table, colorful green and purple lighting behind them, 2025 Advocacy Auction" loading="lazy">
+      <div class="photo-belt" aria-label="Photos from past Advocacy Auctions">
+        <div class="photo-belt-track">
+          <figure class="photo-belt-item">
+            <img src="https://res.cloudinary.com/dhqtiaubo/image/upload/f_auto,q_auto,w_900/v1787959389/UCON-2025-Advocacy-Auction-184-2396_mbx8m1.jpg" alt="A woman rests her hand on a fellow guest's shoulder as they share a warm laugh at the dinner table, colorful green and purple lighting behind them, 2025 Advocacy Auction" loading="lazy">
           </figure>
-          <figure class="home-photo-belt-item">
-            <img src="https://res.cloudinary.com/dhqtiaubo/image/upload/f_auto,q_auto,w_600/v1787959390/UCON-2024-Annual-Auction-264-1030_zlqdzf.jpg" alt="A couple holds up colorful maracas together, celebrating at the fiesta-themed 2024 Annual Auction under blue and purple lighting" loading="lazy">
+          <figure class="photo-belt-item">
+            <img src="https://res.cloudinary.com/dhqtiaubo/image/upload/f_auto,q_auto,w_900/v1787959390/UCON-2024-Annual-Auction-264-1030_zlqdzf.jpg" alt="A couple holds up colorful maracas together, celebrating at the fiesta-themed 2024 Annual Auction under blue and purple lighting" loading="lazy">
           </figure>
-          <figure class="home-photo-belt-item">
-            <img src="https://res.cloudinary.com/dhqtiaubo/image/upload/f_auto,q_auto,w_600/v1787959389/UCON-2023-Auction-193-7003_rxwkjx.jpg" alt="A woman claps excitedly beside a bidder raising paddle #325 high above the table, framed by pink and red floral centerpieces, during live bidding at the 2023 UCON Advocacy Auction." loading="lazy">
+          <figure class="photo-belt-item">
+            <img src="https://res.cloudinary.com/dhqtiaubo/image/upload/f_auto,q_auto,w_900/v1787959389/UCON-2023-Auction-193-7003_rxwkjx.jpg" alt="A woman claps excitedly beside a bidder raising paddle #325 high above the table, framed by pink and red floral centerpieces, during live bidding at the 2023 UCON Advocacy Auction." loading="lazy">
           </figure>
-          <figure class="home-photo-belt-item">
-            <img src="https://res.cloudinary.com/dhqtiaubo/image/upload/f_auto,q_auto,w_600/v1787959394/UCON-2025-Advocacy-Auction-101-1630_v9jbov.jpg" alt="Three distinguished guests pose together at the 2025 UCON Advocacy Auction, with a purple feather centerpiece and colorful ambient lighting behind them." loading="lazy" style="object-position:center 10%;">
+          <figure class="photo-belt-item">
+            <img src="https://res.cloudinary.com/dhqtiaubo/image/upload/f_auto,q_auto,w_900/v1787959394/UCON-2025-Advocacy-Auction-101-1630_v9jbov.jpg" alt="Three distinguished guests pose together at the 2025 UCON Advocacy Auction, with a purple feather centerpiece and colorful ambient lighting behind them." loading="lazy" style="object-position:center 10%;">
           </figure>
-          <figure class="home-photo-belt-item">
-            <img src="https://res.cloudinary.com/dhqtiaubo/image/upload/f_auto,q_auto,w_600/v1787959393/UCON-2025-Advocacy-Auction-148-2227_bizzpx.jpg" alt="A guest in a navy suit dramatically raises his bid paddle overhead in an exciting moment during live bidding at the 2025 UCON Advocacy Auction." loading="lazy">
-          </figure>
-          <figure class="home-photo-belt-item" aria-hidden="true">
-            <img src="https://res.cloudinary.com/dhqtiaubo/image/upload/f_auto,q_auto,w_600/v1787959389/UCON-2025-Advocacy-Auction-184-2396_mbx8m1.jpg" alt="" loading="lazy">
-          </figure>
-          <figure class="home-photo-belt-item" aria-hidden="true">
-            <img src="https://res.cloudinary.com/dhqtiaubo/image/upload/f_auto,q_auto,w_600/v1787959390/UCON-2024-Annual-Auction-264-1030_zlqdzf.jpg" alt="" loading="lazy">
-          </figure>
-          <figure class="home-photo-belt-item" aria-hidden="true">
-            <img src="https://res.cloudinary.com/dhqtiaubo/image/upload/f_auto,q_auto,w_600/v1787959389/UCON-2023-Auction-193-7003_rxwkjx.jpg" alt="" loading="lazy">
-          </figure>
-          <figure class="home-photo-belt-item" aria-hidden="true">
-            <img src="https://res.cloudinary.com/dhqtiaubo/image/upload/f_auto,q_auto,w_600/v1787959394/UCON-2025-Advocacy-Auction-101-1630_v9jbov.jpg" alt="" loading="lazy" style="object-position:center 10%;">
-          </figure>
-          <figure class="home-photo-belt-item" aria-hidden="true">
-            <img src="https://res.cloudinary.com/dhqtiaubo/image/upload/f_auto,q_auto,w_600/v1787959393/UCON-2025-Advocacy-Auction-148-2227_bizzpx.jpg" alt="" loading="lazy">
+          <figure class="photo-belt-item">
+            <img src="https://res.cloudinary.com/dhqtiaubo/image/upload/f_auto,q_auto,w_900/v1787959393/UCON-2025-Advocacy-Auction-148-2227_bizzpx.jpg" alt="A guest in a navy suit dramatically raises his bid paddle overhead in an exciting moment during live bidding at the 2025 UCON Advocacy Auction." loading="lazy">
           </figure>
         </div>
       </div>
