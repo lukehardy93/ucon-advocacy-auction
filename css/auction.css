@@ -338,6 +338,9 @@ section{padding:88px 0;}
 .sponsor-card-cta:hover{background:var(--ink);color:#fff;}
 .sponsor-card.exclusive .sponsor-card-cta{border-color:var(--lantern);color:var(--lantern);}
 .sponsor-card.exclusive .sponsor-card-cta:hover{background:var(--lantern);color:var(--teal);}
+.sponsor-card-company{display:flex;align-items:center;gap:8px;font-family:var(--font-body);font-size:12.5px;font-weight:600;letter-spacing:.3px;color:var(--goldD);margin:-8px 0 16px;}
+.sponsor-card-company i{font-size:11px;}
+.sponsor-card.exclusive .sponsor-card-company{color:var(--lantern);}
 
 /* ---------- SPONSOR LOGO WALL / PLACEHOLDERS ---------- */
 .logo-wall{display:grid;grid-template-columns:repeat(auto-fill,minmax(170px,1fr));gap:1px;margin-top:36px;background:var(--line);border:1px solid var(--line);}
