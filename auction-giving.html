@@ -49,6 +49,13 @@
   .giv-jump-nav{padding:14px 0;}
   .giv-jump-btn{font-size:12px;padding:9px 16px;}
 }
+.giv-fou-grid{grid-template-columns:repeat(2,1fr);max-width:720px;}
+.giv-fou-grid .ticket-card{display:flex;flex-direction:column;}
+.giv-fou-grid .ticket-prices{flex:1;}
+.giv-fou-grid .ticket-btn{margin-top:20px;}
+@media(max-width:560px){
+  .giv-fou-grid{grid-template-columns:1fr;max-width:420px;margin-left:auto;margin-right:auto;}
+}
 </style>
 </head>
 <body>
@@ -564,7 +571,7 @@
       <div class="section-label"><span class="dot"></span><span>Give Another Way</span></div>
       <h2 class="section-title">Friends of UCON Donation</h2>
       <p class="section-sub">Don't have an item or experience to donate? Make a cash gift instead. Every Friends of UCON Donation goes directly toward purchasing an item that will be placed in our silent or live auction.</p>
-      <div class="tickets-grid">
+      <div class="tickets-grid giv-fou-grid">
         <div class="ticket-card">
           <h3 class="ticket-type">Friend</h3>
           <div class="ticket-prices"><div class="ticket-price">$250<span class="who">Friends of UCON</span></div></div>
