@@ -28,6 +28,25 @@
 .spon-tier-count{font-size:15px;color:var(--mut);margin-top:10px;}
 /* .sponsor-card-company now lives in css/auction.css (shared across pages) */
 .spon-logo-intro{max-width:680px;}
+/* Event Sponsor Recognition block (move the whole <section id="event-sponsors"> to the top of main once sponsorships close). To swap a name for a logo, replace the <span class="spon-ev-name"> with <img src="img/sponsors/NAME.png" alt="Company Name">. */
+.spon-ev{position:relative;overflow:hidden;background:radial-gradient(ellipse at 15% 0%,rgba(199,166,91,.16),transparent 55%),radial-gradient(ellipse at 90% 100%,rgba(190,107,59,.14),transparent 55%),var(--teal);color:#E7E2D3;}
+.spon-ev .section-title{color:#fff;}
+.spon-ev .section-sub{color:#CFC8B3;}
+.spon-ev-head{text-align:center;max-width:720px;margin:0 auto 44px;}
+.spon-ev-head .section-label{justify-content:center;}
+.spon-ev-tiers{display:flex;flex-direction:column;gap:22px;}
+.spon-ev-tier{border:1px solid rgba(199,166,91,.35);border-radius:14px;background:rgba(255,255,255,.04);padding:26px 28px 30px;}
+.spon-ev-tier-label{display:flex;align-items:center;gap:14px;font-family:var(--font-body);font-size:11.5px;font-weight:700;letter-spacing:2.4px;text-transform:uppercase;color:var(--lantern);margin-bottom:20px;}
+.spon-ev-tier-label::before,.spon-ev-tier-label::after{content:"";flex:1;height:1px;background:linear-gradient(90deg,transparent,rgba(199,166,91,.45),transparent);}
+.spon-ev-row{display:flex;flex-wrap:wrap;justify-content:center;gap:14px;}
+.spon-ev-tile{flex:0 1 220px;min-height:88px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;gap:5px;padding:16px 18px;background:var(--paper);border-radius:10px;box-shadow:0 6px 18px rgba(0,0,0,.28);}
+.spon-ev-tile img{max-width:100%;max-height:72px;width:auto;height:auto;object-fit:contain;}
+.spon-ev-name{font-family:var(--font-head);font-size:16px;font-weight:700;line-height:1.25;color:var(--ink);}
+.spon-ev-for{font-family:var(--font-body);font-size:10px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--goldD);}
+.spon-ev-tier.top .spon-ev-tile{flex-basis:300px;min-height:112px;}
+.spon-ev-tier.top .spon-ev-name{font-size:20px;}
+.spon-ev-tier.feature .spon-ev-tile{flex-basis:250px;}
+@media(max-width:560px){.spon-ev-tier{padding:22px 16px 24px;}.spon-ev-tile,.spon-ev-tier.top .spon-ev-tile,.spon-ev-tier.feature .spon-ev-tile{flex:1 1 100%;}}
 .spon-annual-wall{margin-top:32px;background:var(--paper);border:1px solid var(--line);border-radius:16px;padding:20px;box-shadow:var(--shadow-sm);}
 .spon-annual-wall img{display:block;width:100%;height:auto;border-radius:8px;}
 /* Mirrors .note-box h4 styling without using a heading tag, so the note box
@@ -571,6 +590,74 @@
       <div class="note-box" style="margin-top:48px;">
         <p class="spon-note-label">Sponsorship Window</p>
         <p>Sponsorships are open now through <strong>Friday, October 16, 2026</strong>; sponsorships close three weeks prior to the event. Please submit your sponsorship request and company logo early to guarantee inclusion in event materials. Questions? Email <a href="mailto:sponsorship@unitedcontractors.org">sponsorship@unitedcontractors.org</a>.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- EVENT SPONSOR RECOGNITION: move this whole section to the top of <main> (above the Sponsorship Tiers section) once sponsorships close -->
+  <section class="spon-ev" id="event-sponsors">
+    <div class="container">
+      <div class="spon-ev-head">
+        <div class="section-label"><span class="dot"></span><span>With Gratitude</span></div>
+        <h2 class="section-title">Thank You, Event Sponsors</h2>
+        <p class="section-sub">The companies below make Hong Kong After Dark possible. Their generosity powers UCON's Government Advocacy program.</p>
+      </div>
+      <div class="spon-ev-tiers">
+
+        <div class="spon-ev-tier top">
+          <p class="spon-ev-tier-label">Dragon Sponsor</p>
+          <div class="spon-ev-row">
+            <div class="spon-ev-tile"><img src="https://res.cloudinary.com/dhqtiaubo/image/upload/f_auto,q_auto,w_400/v1792000638/DNB_Infrastructure_Logo_2025_rhklnd.jpg" alt="D N B Infrastructure, Inc." loading="lazy"></div>
+          </div>
+        </div>
+
+        <div class="spon-ev-tier top">
+          <p class="spon-ev-tier-label">Tiger Sponsors</p>
+          <div class="spon-ev-row">
+            <div class="spon-ev-tile"><img src="https://res.cloudinary.com/dhqtiaubo/image/upload/f_auto,q_auto,w_400/v1792000640/Kiewit_Aug_2026_xjch4k.png" alt="Kiewit Infrastructure West Co." loading="lazy"></div>
+            <div class="spon-ev-tile"><img src="https://res.cloudinary.com/dhqtiaubo/image/upload/f_auto,q_auto,w_400/v1792000641/DeSilva_Gates_gqg8pc.jpg" alt="DeSilva Gates Construction, LLC" loading="lazy"></div>
+            <div class="spon-ev-tile"><img src="https://res.cloudinary.com/dhqtiaubo/image/upload/f_auto,q_auto,w_400/v1792001836/Gallagher_Burk_Logo_aqrzba.png" alt="Gallagher &amp; Burk, Inc." loading="lazy"></div>
+            <div class="spon-ev-tile"><img src="https://res.cloudinary.com/dhqtiaubo/image/upload/f_auto,q_auto,w_400/v1792000642/OCJ_100-high_resolution_kixqps.png" alt="O.C. Jones &amp; Sons, Inc." loading="lazy"></div>
+            <div class="spon-ev-tile"><img src="https://res.cloudinary.com/dhqtiaubo/image/upload/f_auto,q_auto,w_400/v1792001837/granite_p3s6mj.png" alt="Granite Construction Company" loading="lazy"></div>
+            <div class="spon-ev-tile"><img src="https://res.cloudinary.com/dhqtiaubo/image/upload/f_auto,q_auto,w_400/v1792001836/flatiron_boiddm.webp" alt="Flatiron Dragados Constructors, Inc." loading="lazy"></div>
+            <div class="spon-ev-tile"><img src="https://res.cloudinary.com/dhqtiaubo/image/upload/f_auto,q_auto,w_400/v1792000639/TJ_Gardner_logo25_rd8zdl.png" alt="TJ Gardner Company, Inc." loading="lazy"></div>
+          </div>
+        </div>
+
+        <div class="spon-ev-tier feature">
+          <p class="spon-ev-tier-label">Signature Event Sponsors</p>
+          <div class="spon-ev-row">
+            <div class="spon-ev-tile"><span class="spon-ev-for">Photo Booth</span><img src="https://res.cloudinary.com/dhqtiaubo/image/upload/f_auto,q_auto,w_400/v1792000638/CA_Alliance_for_Jobs_axfee1.jpg" alt="California Alliance for Jobs" loading="lazy"></div>
+            <div class="spon-ev-tile"><span class="spon-ev-for">Key Card</span><img src="https://res.cloudinary.com/dhqtiaubo/image/upload/f_auto,q_auto,w_400/v1792000639/TJ_Gardner_logo25_rd8zdl.png" alt="TJ Gardner Company, Inc." loading="lazy"></div>
+            <div class="spon-ev-tile"><span class="spon-ev-for">Lantern Nightlight</span><img src="https://res.cloudinary.com/dhqtiaubo/image/upload/f_auto,q_auto,w_400/v1792001005/Chrisp-Company_eiebuy.png" alt="Chrisp Company" loading="lazy"></div>
+            <div class="spon-ev-tile"><span class="spon-ev-for">Fortune Cookie</span><img src="https://res.cloudinary.com/dhqtiaubo/image/upload/f_png,w_400,pg_1/v1792001049/ISCO_Total_HDPE_Piping_Solutions_xwnax5.png" alt="Isco Industries, Inc." loading="lazy"></div>
+            <div class="spon-ev-tile"><span class="spon-ev-for">Cocktail Napkin</span><img src="https://res.cloudinary.com/dhqtiaubo/image/upload/f_auto,q_auto,w_400/v1792000635/Bakertilly_l4v0id.png" alt="Baker Tilly" loading="lazy"></div>
+            <div class="spon-ev-tile"><span class="spon-ev-for">Cocktail Napkin</span><img src="https://res.cloudinary.com/dhqtiaubo/image/upload/f_auto,q_auto,w_400/v1792000634/Sierra_Mountain_Construcation_-_Just_oval_ti2m7q.jpg" alt="Sierra Mountain Construction, Inc." loading="lazy"></div>
+            <div class="spon-ev-tile"><span class="spon-ev-for">Dinner Wine</span><img src="https://res.cloudinary.com/dhqtiaubo/image/upload/f_auto,q_auto,w_400/v1792000635/Talus-Construction_f1zsvd.png" alt="Talus Construction, Inc." loading="lazy"></div>
+          </div>
+        </div>
+
+        <div class="spon-ev-tier">
+          <p class="spon-ev-tier-label">Lotus &amp; Prosperity Sponsors</p>
+          <div class="spon-ev-row">
+            <div class="spon-ev-tile"><span class="spon-ev-for">Lotus</span><img src="https://res.cloudinary.com/dhqtiaubo/image/upload/f_auto,q_auto,w_400/v1792000986/anvil_builders_25_bdqchi.png" alt="Anvil Builders Inc." loading="lazy"></div>
+            <div class="spon-ev-tile"><span class="spon-ev-for">Lotus</span><img src="https://res.cloudinary.com/dhqtiaubo/image/upload/f_auto,q_auto,w_400/v1792001838/underground-construction-co_yq37jq.webp" alt="Underground Construction Co., Inc." loading="lazy"></div>
+            <div class="spon-ev-tile"><span class="spon-ev-for">Prosperity</span><img src="https://res.cloudinary.com/dhqtiaubo/image/upload/f_auto,q_auto,w_400/v1792000637/Trench_Shoring_zgatd1.png" alt="Trench Shoring Company" loading="lazy"></div>
+            <div class="spon-ev-tile"><span class="spon-ev-for">Prosperity</span><img src="https://res.cloudinary.com/dhqtiaubo/image/upload/f_auto,q_auto,w_400/v1792000637/MaggioraGhilottiLogo1_nwwuw3.jpg" alt="Maggiora &amp; Ghilotti, Inc." loading="lazy"></div>
+          </div>
+        </div>
+
+        <div class="spon-ev-tier">
+          <p class="spon-ev-tier-label">Festival Bar &amp; Bamboo Sponsors</p>
+          <div class="spon-ev-row">
+            <div class="spon-ev-tile"><span class="spon-ev-for">Festival Bar</span><img src="https://res.cloudinary.com/dhqtiaubo/image/upload/f_auto,q_auto,w_400/v1792000634/Carpenter_Rigging_Group_Logo_2024_vydp6i.jpg" alt="Carpenter Rigging Group" loading="lazy"></div>
+            <div class="spon-ev-tile"><span class="spon-ev-for">Festival Bar</span><img src="https://res.cloudinary.com/dhqtiaubo/image/upload/f_auto,q_auto,w_400/v1792000634/Mozingo-Construction-Inc-logo-scaled_copy_gg5ks3.png" alt="Mozingo Construction, Inc." loading="lazy"></div>
+            <div class="spon-ev-tile"><span class="spon-ev-for">Festival Bar</span><img src="https://res.cloudinary.com/dhqtiaubo/image/upload/f_auto,q_auto,w_400/v1792001836/platinumpipeline_logo_tbyuvb.png" alt="Platinum Pipeline, Inc." loading="lazy"></div>
+            <div class="spon-ev-tile"><span class="spon-ev-for">Festival Bar</span><img src="https://res.cloudinary.com/dhqtiaubo/image/upload/f_auto,q_auto,w_400/v1792001839/PCN_qawdii.webp" alt="P C &amp; N Construction, Inc." loading="lazy"></div>
+            <div class="spon-ev-tile"><span class="spon-ev-for">Bamboo</span><img src="https://res.cloudinary.com/dhqtiaubo/image/upload/f_auto,q_auto,w_400/v1792000641/JMB_Construction_Inc_jg80yy.jpg" alt="JMB Construction, Inc." loading="lazy"></div>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
