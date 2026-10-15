@@ -549,3 +549,10 @@ footer{background:var(--teal);color:#B7B09C;padding:60px 0 28px;border-top:1px s
 @keyframes photoBeltScroll{from{transform:translateX(0);}to{transform:translateX(-25%);}}
 @media(prefers-reduced-motion:reduce){.photo-belt-track{animation:none;}}
 @media(max-width:560px){.photo-belt-item{width:190px;}}
+
+/* SOLD-OUT TICKET NOTICES */
+.sold-out-pill{display:inline-flex;align-items:center;gap:10px;background:rgba(199,166,91,.14);border:1px solid var(--lantern);color:var(--lantern);font-family:var(--font-body);font-weight:700;letter-spacing:1.6px;text-transform:uppercase;font-size:13.5px;border-radius:2px;padding:13px 26px;cursor:default;}
+.ec-actions .sold-out-pill{color:var(--goldD);border-color:var(--gold);background:rgba(169,132,60,.1);}
+.hero-soldout-note{max-width:640px;margin:0 auto 22px;font-family:var(--font-body);font-size:16px;line-height:1.6;color:#F1EAD8;}
+.hero-soldout-note strong{color:var(--lantern);letter-spacing:1px;}
+.sold-out-banner{display:flex;align-items:center;justify-content:center;gap:12px;text-align:center;margin:0 auto 32px;max-width:720px;padding:16px 22px;border:1px solid var(--gold);background:rgba(169,132,60,.1);border-radius:6px;font-family:var(--font-body);font-weight:700;letter-spacing:.4px;color:var(--goldD);}
