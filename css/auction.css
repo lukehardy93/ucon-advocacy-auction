@@ -565,5 +565,6 @@ footer{background:var(--teal);color:#B7B09C;padding:60px 0 28px;border-top:1px s
 .hero-soldout{max-width:760px;margin:26px auto 30px;padding:24px 30px 26px;border:2px solid var(--lantern);border-radius:10px;background:rgba(11,30,32,.72);box-shadow:0 0 34px rgba(199,166,91,.35),inset 0 0 24px rgba(199,166,91,.12);text-align:center;}
 .hero-soldout-big{display:block;font-family:var(--font-head);font-weight:800;font-size:clamp(46px,9vw,92px);line-height:1;letter-spacing:6px;text-transform:uppercase;color:var(--lantern);text-shadow:0 0 18px rgba(199,166,91,.6),0 0 42px rgba(199,166,91,.35);}
 .hero-soldout p{margin:14px auto 0;max-width:620px;font-family:var(--font-body);font-size:clamp(16px,2.2vw,19px);line-height:1.55;color:#F5EFDF;}
+.hero-soldout .hero-soldout-btns{margin-top:20px;}
 .hero-soldout strong{color:var(--lantern);letter-spacing:1px;}
 @media(max-width:560px){.soldout-bar{font-size:13.5px;padding:10px 14px;gap:8px;}.hero-soldout{padding:20px 16px 22px;}}
