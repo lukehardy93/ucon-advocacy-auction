@@ -27,6 +27,9 @@
 /* ---------- page-scoped additions, prefixed .giv- per brief ---------- */
 .giv-item-note{font-size:15px;color:var(--mut);max-width:680px;margin-top:10px;}
 .item-card .thumb.giv-ph{font-size:44px;background:linear-gradient(135deg,var(--cream2),#efe3c8);}
+.giv-sub{font-family:var(--font-head);font-size:24px;font-weight:700;color:var(--ink);margin-top:44px;}
+.giv-sub-note{font-size:15px;color:var(--mut);margin-top:6px;max-width:680px;}
+.giv-sub+.giv-sub-note+.item-grid{margin-top:22px;}
 .giv-purchaser{font-family:var(--font-body);font-size:12.5px;font-weight:600;letter-spacing:.4px;color:var(--goldD);margin-top:6px;}
 .giv-donate-inner{display:flex;flex-direction:column;gap:22px;align-items:flex-start;max-width:720px;margin-top:40px;}
 .giv-form-btns{display:flex;flex-wrap:wrap;gap:14px;justify-content:center;}
@@ -353,6 +356,8 @@
       <div class="section-label"><span class="dot"></span><span>Live Auction</span></div>
       <h2 class="section-title">Live Auction Items</h2>
       <p class="section-sub">An early look at the marquee getaways, experiences, and one-of-a-kind pre-packaged items available to claim live during dinner at the listed purchase price. Final selections and package details will be confirmed closer to the event.</p>
+      <h3 class="giv-sub">Donated Items</h3>
+      <p class="giv-sub-note">Generously donated by our members and partners.</p>
       <div class="item-grid">
         <div class="item-card sold">
           <div class="thumb"><img src="https://res.cloudinary.com/dhqtiaubo/image/upload/f_auto,q_auto,w_500/v1785537074/dom_perignon_c7js2t.jpg" alt="Chilled Dom P&eacute;rignon and Private Waiter" loading="lazy"></div>
@@ -364,6 +369,34 @@
           <span class="sold-badge">Sold</span>
           <div class="body"><p class="lbl">2-Night Stay for 2</p><p class="name">Hollywood Date Night: Rossoblu Tasting Experience &amp; Hollywood Hotel Retreat</p><p class="val">Purchase Price $1,600</p><p class="giv-purchaser">Donated by Bob Rahebi, Redgwick Construction Company</p></div>
         </div>
+        <div class="item-card sold">
+          <div class="thumb"><img src="https://res.cloudinary.com/dhqtiaubo/image/upload/f_auto,q_auto,w_500/v1785536341/La_Jolla_ka6ubs.webp" alt="Relax &amp; Restore in La Jolla: A Coastal Wellness Escape for Two" loading="lazy"></div>
+          <span class="sold-badge">Sold</span>
+          <div class="body"><p class="lbl">3-Night Stay for 2</p><p class="name">Relax &amp; Restore in La Jolla: A Coastal Wellness Escape for Two</p><p class="val">Purchase Price $2,900</p><p class="giv-purchaser">Donated by Aaron Peabody, Summit Financial Group, LLC</p></div>
+        </div>
+        <div class="item-card"><div class="thumb giv-ph"><i class="fa-solid fa-martini-glass-citrus" aria-hidden="true"></i></div><div class="body"><p class="lbl">San Francisco Experience</p><p class="name">Hosted Tour of San Francisco's Best Secret Bars with UCON's CEO Emily Cohen</p><p class="giv-purchaser">Donated by Emily Cohen, United Contractors</p></div></div>
+        <div class="item-card"><div class="thumb giv-ph"><i class="fa-solid fa-baseball" aria-hidden="true"></i></div><div class="body"><p class="lbl">Sports Tickets</p><p class="name">4 Premium Field Club Level Tickets to 2026 Giants Game</p><p class="giv-purchaser">Donated by Sharmel Patton, Anvil Builders Inc.</p></div></div>
+        <div class="item-card"><div class="thumb giv-ph"><i class="fa-solid fa-baseball-bat-ball" aria-hidden="true"></i></div><div class="body"><p class="lbl">Sports Experience</p><p class="name">Suite SF Giants Game for 12</p><p class="giv-purchaser">Donated by Brent Fogg, Granite Construction Company</p></div></div>
+        <div class="item-card"><div class="thumb giv-ph"><i class="fa-solid fa-umbrella-beach" aria-hidden="true"></i></div><div class="body"><p class="lbl">5-Night Stay for 2 with Airfare</p><p class="name">The Ultimate 'Aloha' Experience: Maui Vacation for 2</p><p class="giv-purchaser">Donated by Brian Gates, Goodfellow Bros. California, LLC</p></div></div>
+        <div class="item-card"><div class="thumb giv-ph"><i class="fa-solid fa-dog" aria-hidden="true"></i></div><div class="body"><p class="lbl">Unique Experience</p><p class="name">Auction Puppy</p><p class="giv-purchaser">Donated by Kim Carone, McGuire and Hester</p></div></div>
+        <div class="item-card"><div class="thumb giv-ph"><i class="fa-solid fa-wine-glass" aria-hidden="true"></i></div><div class="body"><p class="lbl">Wine Country</p><p class="name">Sonoma Swirl, Sip, and Savor</p><p class="giv-purchaser">Donated by Hal Stober, Gordon N. Ball, Inc.</p></div></div>
+        <div class="item-card"><div class="thumb giv-ph"><i class="fa-solid fa-crosshairs" aria-hidden="true"></i></div><div class="body"><p class="lbl">Adventure Trip</p><p class="name">African Hunt Trip</p><p class="giv-purchaser">Donated by Jen &amp; Eric Gardner, TJ Gardner Company, Inc.</p></div></div>
+        <div class="item-card"><div class="thumb giv-ph"><i class="fa-solid fa-mountain-sun" aria-hidden="true"></i></div><div class="body"><p class="lbl">Adventure Trip</p><p class="name">Exclusive Ultimate Montana Trip of a Lifetime</p><p class="giv-purchaser">Donated by Jen &amp; Eric Gardner, TJ Gardner Company, Inc.</p></div></div>
+        <div class="item-card"><div class="thumb giv-ph"><i class="fa-solid fa-sailboat" aria-hidden="true"></i></div><div class="body"><p class="lbl">Bay Experience</p><p class="name">Sailing with Alan Guy</p><p class="giv-purchaser">Donated by Alan Guy, United Contractors</p></div></div>
+        <div class="item-card"><div class="thumb giv-ph"><i class="fa-solid fa-record-vinyl" aria-hidden="true"></i></div><div class="body"><p class="lbl">Lounge Experience</p><p class="name">Sip + Spin Vinyl Lounge Experience</p><p class="giv-purchaser">Donated by Lamar Engle, The Wine Militia LLC</p></div></div>
+        <div class="item-card"><div class="thumb giv-ph"><i class="fa-solid fa-basketball" aria-hidden="true"></i></div><div class="body"><p class="lbl">Sports Experience for 3</p><p class="name">Golden State Warriors Courtside Experience for 3</p><p class="giv-purchaser">Donated by Lisa de Freitas Sundberg, Platinum Pipeline, Inc.</p></div></div>
+        <div class="item-card"><div class="thumb giv-ph"><i class="fa-solid fa-golf-ball-tee" aria-hidden="true"></i></div><div class="body"><p class="lbl">Golf for 4</p><p class="name">Round of Golf at the Bayonet &amp; Blackhorse Club for 4</p><p class="giv-purchaser">Donated by Bayonet &amp; Black Horse Golf Course</p></div></div>
+        <div class="item-card"><div class="thumb giv-ph"><i class="fa-solid fa-basketball" aria-hidden="true"></i></div><div class="body"><p class="lbl">Sports Tickets for 4</p><p class="name">Warriors Stadium Box Tickets for 4</p><p class="giv-purchaser">Donated by Mike Bauman, Bauman Landscape and Construction, Inc.</p></div></div>
+        <div class="item-card"><div class="thumb giv-ph"><i class="fa-solid fa-champagne-glasses" aria-hidden="true"></i></div><div class="body"><p class="lbl">Wine Collection</p><p class="name">UCON Past Presidents' Ultimate One &amp; Only Wine Collection - Dom and Bucket</p><p class="giv-purchaser">Donated by UCON Past Presidents, United Contractors</p></div></div>
+        <div class="item-card"><div class="thumb giv-ph"><i class="fa-solid fa-city" aria-hidden="true"></i></div><div class="body"><p class="lbl">Travel for 2</p><p class="name">The San Francisco Treat: A Week in the City for 2</p><p class="giv-purchaser">Donated by George Furnanz, Stacy Witbeck</p></div></div>
+        <div class="item-card"><div class="thumb giv-ph"><i class="fa-solid fa-hockey-puck" aria-hidden="true"></i></div><div class="body"><p class="lbl">Tickets for 4</p><p class="name">LA Kings vs Calgary Flames, November 14: 4 Tickets at San Manuel Club, Table 16</p><p class="giv-purchaser">Donated by Sean Castillo, Toro Enterprises</p></div></div>
+        <div class="item-card"><div class="thumb giv-ph"><i class="fa-solid fa-basketball" aria-hidden="true"></i></div><div class="body"><p class="lbl">Suite Tickets</p><p class="name">LA Clippers vs Charlotte Hornets, November 15: 13 Tickets in Suite S3A</p><p class="giv-purchaser">Donated by Sean Castillo, Toro Enterprises</p></div></div>
+        <div class="item-card"><div class="thumb giv-ph"><i class="fa-solid fa-basketball" aria-hidden="true"></i></div><div class="body"><p class="lbl">Tickets for 4</p><p class="name">LA Lakers vs Memphis Grizzlies, December 27: 4 Tickets at San Manuel Club, Table 16</p><p class="giv-purchaser">Donated by Sean Castillo, Toro Enterprises</p></div></div>
+        <div class="item-card"><div class="thumb giv-ph"><i class="fa-solid fa-baseball" aria-hidden="true"></i></div><div class="body"><p class="lbl">Sports Tickets for 4</p><p class="name">4 Tickets to the San Francisco Giants Cloud Club</p><p class="giv-purchaser">Donated by Barry Corey, Trench Shoring Company</p></div></div>
+      </div>
+      <h3 class="giv-sub">Available to Purchase</h3>
+      <p class="giv-sub-note">Packages still available. Purchase now to claim yours before the event.</p>
+      <div class="item-grid">
         <a class="item-card" href="https://www.unitedcontractors.org/event-registration/2026-advocacy-auction-donate" target="_blank" rel="noopener">
           <div class="thumb"><img src="https://res.cloudinary.com/dhqtiaubo/image/upload/f_auto,q_auto,w_500/v1785536342/Glamping_lg1btz.webp" alt="Glamping by the Great Lakes" loading="lazy"></div>
           <div class="body"><p class="lbl">3-Night Stay for 2</p><p class="name">Glamping by the Great Lakes</p><p class="val">Purchase Price $3,100</p> <span class="item-cta">Purchase This Item <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></span></div>
@@ -376,11 +409,6 @@
           <div class="thumb"><img src="https://res.cloudinary.com/dhqtiaubo/image/upload/f_auto,q_auto,w_500/v1785536341/Banff_eomhqh.webp" alt="Banff Ski Adventure: Discover the Magic" loading="lazy"></div>
           <div class="body"><p class="lbl">3-Night Stay for 2</p><p class="name">Banff Ski Adventure: Discover the Magic</p><p class="val">Purchase Price $3,600</p> <span class="item-cta">Purchase This Item <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></span></div>
         </a>
-        <div class="item-card sold">
-          <div class="thumb"><img src="https://res.cloudinary.com/dhqtiaubo/image/upload/f_auto,q_auto,w_500/v1785536341/La_Jolla_ka6ubs.webp" alt="Relax &amp; Restore in La Jolla: A Coastal Wellness Escape for Two" loading="lazy"></div>
-          <span class="sold-badge">Sold</span>
-          <div class="body"><p class="lbl">3-Night Stay for 2</p><p class="name">Relax &amp; Restore in La Jolla: A Coastal Wellness Escape for Two</p><p class="val">Purchase Price $2,900</p><p class="giv-purchaser">Donated by Aaron Peabody, Summit Financial Group, LLC</p></div>
-        </div>
         <a class="item-card" href="https://www.unitedcontractors.org/event-registration/2026-advocacy-auction-donate" target="_blank" rel="noopener">
           <div class="thumb"><img src="https://res.cloudinary.com/dhqtiaubo/image/upload/f_auto,q_auto,w_500/v1785536337/NASCAR_tcsj9e.webp" alt="Pedal to the Metal: NASCAR Driver Experience" loading="lazy"></div>
           <div class="body"><p class="lbl">2-Night Stay for 2</p><p class="name">Pedal to the Metal: NASCAR Driver Experience</p><p class="val">Purchase Price $4,000</p> <span class="item-cta">Purchase This Item <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></span></div>
@@ -441,20 +469,6 @@
           <div class="thumb"><img src="https://res.cloudinary.com/dhqtiaubo/image/upload/f_auto,q_auto,w_500/v1785536337/Lake_Como_giz1bj.webp" alt="Lake Como Romance: Timeless Beauty on Italy's Most Elegant Lake" loading="lazy"></div>
           <div class="body"><p class="lbl">5-Night Stay for 2</p><p class="name">Lake Como Romance: Timeless Beauty on Italy's Most Elegant Lake</p><p class="val">Purchase Price $11,000</p> <span class="item-cta">Purchase This Item <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></span></div>
         </a>
-        <div class="item-card"><div class="thumb giv-ph"><i class="fa-solid fa-martini-glass-citrus" aria-hidden="true"></i></div><div class="body"><p class="lbl">San Francisco Experience</p><p class="name">Hosted Tour of San Francisco's Best Secret Bars with UCON's CEO Emily Cohen</p><p class="val">Value $5,000</p><p class="giv-purchaser">Donated by Emily Cohen, United Contractors</p></div></div>
-        <div class="item-card"><div class="thumb giv-ph"><i class="fa-solid fa-baseball" aria-hidden="true"></i></div><div class="body"><p class="lbl">Sports Tickets</p><p class="name">4 Premium Field Club Level Tickets to 2026 Giants Game</p><p class="val">Value $750</p><p class="giv-purchaser">Donated by Sharmel Patton, Anvil Builders Inc.</p></div></div>
-        <div class="item-card"><div class="thumb giv-ph"><i class="fa-solid fa-baseball-bat-ball" aria-hidden="true"></i></div><div class="body"><p class="lbl">Sports Experience</p><p class="name">Suite SF Giants Game for 12</p><p class="val">Value $3,300</p><p class="giv-purchaser">Donated by Brent Fogg, Granite Construction Company</p></div></div>
-        <div class="item-card"><div class="thumb giv-ph"><i class="fa-solid fa-umbrella-beach" aria-hidden="true"></i></div><div class="body"><p class="lbl">5-Night Stay for 2 with Airfare</p><p class="name">The Ultimate 'Aloha' Experience: Maui Vacation for 2</p><p class="val">Value $3,500</p><p class="giv-purchaser">Donated by Brian Gates, Goodfellow Bros. California, LLC</p></div></div>
-        <div class="item-card"><div class="thumb giv-ph"><i class="fa-solid fa-dog" aria-hidden="true"></i></div><div class="body"><p class="lbl">Unique Experience</p><p class="name">Auction Puppy</p><p class="val">Value $5,000</p><p class="giv-purchaser">Donated by Kim Carone, McGuire and Hester</p></div></div>
-        <div class="item-card"><div class="thumb giv-ph"><i class="fa-solid fa-wine-glass" aria-hidden="true"></i></div><div class="body"><p class="lbl">Wine Country</p><p class="name">Sonoma Swirl, Sip, and Savor</p><p class="val">Value $5,000</p><p class="giv-purchaser">Donated by Hal Stober, Gordon N. Ball, Inc.</p></div></div>
-        <div class="item-card"><div class="thumb giv-ph"><i class="fa-solid fa-crosshairs" aria-hidden="true"></i></div><div class="body"><p class="lbl">Adventure Trip</p><p class="name">African Hunt Trip</p><p class="val">Value $13,000</p><p class="giv-purchaser">Donated by Jen &amp; Eric Gardner, TJ Gardner Company, Inc.</p></div></div>
-        <div class="item-card"><div class="thumb giv-ph"><i class="fa-solid fa-mountain-sun" aria-hidden="true"></i></div><div class="body"><p class="lbl">Adventure Trip</p><p class="name">Exclusive Ultimate Montana Trip of a Lifetime</p><p class="val">Value $25,000</p><p class="giv-purchaser">Donated by Jen &amp; Eric Gardner, TJ Gardner Company, Inc.</p></div></div>
-        <div class="item-card"><div class="thumb giv-ph"><i class="fa-solid fa-sailboat" aria-hidden="true"></i></div><div class="body"><p class="lbl">Bay Experience</p><p class="name">Sailing with Alan Guy</p><p class="val">Value $4,000</p><p class="giv-purchaser">Donated by Alan Guy, United Contractors</p></div></div>
-        <div class="item-card"><div class="thumb giv-ph"><i class="fa-solid fa-record-vinyl" aria-hidden="true"></i></div><div class="body"><p class="lbl">Lounge Experience</p><p class="name">Sip + Spin Vinyl Lounge Experience</p><p class="val">Value $3,500</p><p class="giv-purchaser">Donated by Lamar Engle, The Wine Militia LLC</p></div></div>
-        <div class="item-card"><div class="thumb giv-ph"><i class="fa-solid fa-basketball" aria-hidden="true"></i></div><div class="body"><p class="lbl">Sports Experience for 2</p><p class="name">Golden State Warriors Courtside Experience for 2</p><p class="val">Value $3,500</p><p class="giv-purchaser">Donated by Lisa de Freitas Sundberg, Platinum Pipeline, Inc.</p></div></div>
-        <div class="item-card"><div class="thumb giv-ph"><i class="fa-solid fa-golf-ball-tee" aria-hidden="true"></i></div><div class="body"><p class="lbl">Golf for 4</p><p class="name">Round of Golf at the Bayonet &amp; Blackhorse Club for 4</p><p class="val">Value $550</p><p class="giv-purchaser">Donated by Bayonet &amp; Black Horse Golf Course</p></div></div>
-        <div class="item-card"><div class="thumb giv-ph"><i class="fa-solid fa-basketball" aria-hidden="true"></i></div><div class="body"><p class="lbl">Sports Tickets for 4</p><p class="name">Warriors Stadium Box Tickets for 4</p><p class="val">Value $2,600</p><p class="giv-purchaser">Donated by Mike Bauman, Bauman Landscape and Construction, Inc.</p></div></div>
-        <div class="item-card"><div class="thumb giv-ph"><i class="fa-solid fa-champagne-glasses" aria-hidden="true"></i></div><div class="body"><p class="lbl">Wine Collection</p><p class="name">UCON Past Presidents' Ultimate One &amp; Only Wine Collection - Dom and Bucket</p><p class="val">Value $280</p><p class="giv-purchaser">Donated by UCON Past Presidents, United Contractors</p></div></div>
       </div>
       <p class="giv-item-note">Have a getaway or experience of your own to contribute? Reach out using the donation contact below.</p>
     </div>
@@ -466,6 +480,39 @@
       <div class="section-label"><span class="dot"></span><span>Silent Auction</span></div>
       <h2 class="section-title">Silent Auction Items</h2>
       <p class="section-sub">An early shortlist of pre-packaged items under consideration for the 2026 silent auction, each with a set purchase price. Final selections, quantities, and additional items will be confirmed closer to the event.</p>
+      <h3 class="giv-sub">Donated Items</h3>
+      <p class="giv-sub-note">Generously donated by our members and partners.</p>
+      <div class="item-grid">
+        <div class="item-card sold">
+          <div class="thumb"><img src="https://res.cloudinary.com/dhqtiaubo/image/upload/f_auto,q_auto,w_500/v1785534759/12VCATElectricDumpTruck1SeaterRide-On_sayg7a.webp" alt="12V CAT Electric Dump Truck 1 Seater Ride-On" loading="lazy"></div>
+          <span class="sold-badge">Sold</span>
+          <div class="body"><p class="lbl">Children's Toys</p><p class="name">12V CAT Electric Dump Truck 1 Seater Ride-On</p><p class="val">Purchase Price $350</p><p class="giv-purchaser">Donated by Thomas Lum, Peterson Cat</p></div>
+        </div>
+        <div class="item-card sold">
+          <div class="thumb"><img src="https://res.cloudinary.com/dhqtiaubo/image/upload/f_auto,q_auto,w_500/v1785534758/22-griddle-with-flexfold-legs_vde6cf.webp" alt="Blackstone 22&rdquo; Griddle with Flexfold&reg; Legs" loading="lazy"></div>
+          <span class="sold-badge">Sold</span>
+          <div class="body"><p class="lbl">Home</p><p class="name">Blackstone 22” Griddle with Flexfold® Legs</p><p class="val">Purchase Price $400</p><p class="giv-purchaser">Donated by Kevin Ghilotti, Team Ghilotti, Inc.</p></div>
+        </div>
+        <div class="item-card sold">
+          <div class="thumb"><img src="https://res.cloudinary.com/dhqtiaubo/image/upload/f_auto,q_auto,w_500/v1785534755/YETI_Cooler_wmam9r.avif" alt="YETI Tundra 65 Hard Cooler" loading="lazy"></div>
+          <span class="sold-badge">Sold</span>
+          <div class="body"><p class="lbl">Outdoor</p><p class="name">YETI Tundra 65 Hard Cooler</p><p class="val">Purchase Price $450</p><p class="giv-purchaser">Donated by Bret Lawrence, Arthur J. Gallagher - Woodruff-Sawyer</p></div>
+        </div>
+        <div class="item-card sold">
+          <div class="thumb"><img src="https://res.cloudinary.com/dhqtiaubo/image/upload/f_auto,q_auto,w_500/v1785534752/fire_pit_kfijfs.avif" alt="Solo Stove Summit 27&quot; Smokeless Fire Pit" loading="lazy"></div>
+          <span class="sold-badge">Sold</span>
+          <div class="body"><p class="lbl">Outdoor Living</p><p class="name">Solo Stove Summit 27&quot; Smokeless Fire Pit</p><p class="val">Purchase Price $600</p><p class="giv-purchaser">Donated by Kevin Ghilotti, Team Ghilotti, Inc.</p></div>
+        </div>
+        <div class="item-card"><div class="thumb giv-ph"><i class="fa-solid fa-camera" aria-hidden="true"></i></div><div class="body"><p class="lbl">Photography</p><p class="name">Project Photoshoot</p><p class="giv-purchaser">Donated by Cathy Breslow, Breslow Imaging</p></div></div>
+        <div class="item-card"><div class="thumb giv-ph"><i class="fa-solid fa-bed" aria-hidden="true"></i></div><div class="body"><p class="lbl">Overnight Stay</p><p class="name">Bed and Breakfast Overnight at the Claremont Resort &amp; Club</p><p class="giv-purchaser">Donated by Denise Strasburg, Claremont Resort &amp; Club</p></div></div>
+        <div class="item-card"><div class="thumb giv-ph"><i class="fa-solid fa-hotel" aria-hidden="true"></i></div><div class="body"><p class="lbl">2-Night Stay</p><p class="name">2 Night Stay at the Ritz-Carlton, Laguna-Niguel</p><p class="giv-purchaser">Donated by The Ritz-Carlton Hotel Company</p></div></div>
+        <div class="item-card"><div class="thumb giv-ph"><i class="fa-solid fa-ticket" aria-hidden="true"></i></div><div class="body"><p class="lbl">VIP Tickets for 4</p><p class="name">Lakers vs Sacramento VIP Tickets for 4</p><p class="giv-purchaser">Donated by Sunshine Santos, JMH Engineering and Construction</p></div></div>
+        <div class="item-card"><div class="thumb giv-ph"><i class="fa-solid fa-hockey-puck" aria-hidden="true"></i></div><div class="body"><p class="lbl">VIP Tickets for 4</p><p class="name">Kings vs Edmonton VIP Tickets for 4</p><p class="giv-purchaser">Donated by Sunshine Santos, JMH Engineering and Construction</p></div></div>
+        <div class="item-card"><div class="thumb giv-ph"><i class="fa-solid fa-ticket" aria-hidden="true"></i></div><div class="body"><p class="lbl">VIP Tickets for 4</p><p class="name">4 Sacramento Kings Tickets with Lounge Access</p><p class="giv-purchaser">Donated by Jason Herrera, BFBA</p></div></div>
+        <div class="item-card"><div class="thumb giv-ph"><i class="fa-solid fa-fire-burner" aria-hidden="true"></i></div><div class="body"><p class="lbl">Outdoor Cooking</p><p class="name">Ooni Koda 2 Gas-Powered Pizza Oven</p><p class="giv-purchaser">Donated by Arpi Alajaji, Smith Currie Oles</p></div></div>
+      </div>
+      <h3 class="giv-sub">Available to Purchase</h3>
+      <p class="giv-sub-note">Packages still available. Purchase now to claim yours before the event.</p>
       <div class="item-grid">
         <a class="item-card" href="https://www.unitedcontractors.org/event-registration/2026-advocacy-auction-donate" target="_blank" rel="noopener">
           <div class="thumb"><img src="https://res.cloudinary.com/dhqtiaubo/image/upload/f_auto,q_auto,w_500/v1785534761/Blanton_s_Gold_Edition_crkawd.webp" alt="Blanton's Gold Edition Bourbon" loading="lazy"></div>
@@ -478,11 +525,6 @@
           </div>
           <div class="body"><p class="lbl">Audio</p><p class="name">Victrola Century Essential Record Player &amp; Record Stand</p><p class="val">Purchase Price $250</p> <span class="item-cta">Purchase This Item <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></span></div>
         </a>
-        <div class="item-card sold">
-          <div class="thumb"><img src="https://res.cloudinary.com/dhqtiaubo/image/upload/f_auto,q_auto,w_500/v1785534759/12VCATElectricDumpTruck1SeaterRide-On_sayg7a.webp" alt="12V CAT Electric Dump Truck 1 Seater Ride-On" loading="lazy"></div>
-          <span class="sold-badge">Sold</span>
-          <div class="body"><p class="lbl">Children's Toys</p><p class="name">12V CAT Electric Dump Truck 1 Seater Ride-On</p><p class="val">Purchase Price $350</p><p class="giv-purchaser">Donated by Thomas Lum, Peterson Cat</p></div>
-        </div>
         <a class="item-card" href="https://www.unitedcontractors.org/event-registration/2026-advocacy-auction-donate" target="_blank" rel="noopener">
           <div class="thumb"><img src="https://res.cloudinary.com/dhqtiaubo/image/upload/f_auto,q_auto,w_500/v1785534759/Theragun-Prime-G6-PDP-Hero-2_kkomrt.webp" alt="Theragun Prime" loading="lazy"></div>
           <div class="body"><p class="lbl">Recovery Tech</p><p class="name">Theragun Prime</p><p class="val">Purchase Price $375</p> <span class="item-cta">Purchase This Item <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></span></div>
@@ -495,11 +537,6 @@
           <div class="thumb"><img src="https://res.cloudinary.com/dhqtiaubo/image/upload/f_auto,q_auto,w_500/v1785534758/meta_quest_juqzdf.jpg" alt="Meta Quest 3S VR Headset" loading="lazy"></div>
           <div class="body"><p class="lbl">Gaming/VR</p><p class="name">Meta Quest 3S VR Headset</p><p class="val">Purchase Price $400</p> <span class="item-cta">Purchase This Item <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></span></div>
         </a>
-        <div class="item-card sold">
-          <div class="thumb"><img src="https://res.cloudinary.com/dhqtiaubo/image/upload/f_auto,q_auto,w_500/v1785534758/22-griddle-with-flexfold-legs_vde6cf.webp" alt="Blackstone 22&rdquo; Griddle with Flexfold&reg; Legs" loading="lazy"></div>
-          <span class="sold-badge">Sold</span>
-          <div class="body"><p class="lbl">Home</p><p class="name">Blackstone 22” Griddle with Flexfold® Legs</p><p class="val">Purchase Price $400</p><p class="giv-purchaser">Donated by Kevin Ghilotti, Team Ghilotti, Inc.</p></div>
-        </div>
         <a class="item-card" href="https://www.unitedcontractors.org/event-registration/2026-advocacy-auction-donate" target="_blank" rel="noopener">
           <div class="thumb"><img src="https://res.cloudinary.com/dhqtiaubo/image/upload/f_auto,q_auto,w_500/v1785534757/meta_glasses_rimfsy.avif" alt="Ray-Ban Meta Smart Glasses (Gen 2)" loading="lazy"></div>
           <div class="body"><p class="lbl">Wearable Tech</p><p class="name">Ray-Ban Meta Smart Glasses (Gen 2)</p><p class="val">Purchase Price $425</p> <span class="item-cta">Purchase This Item <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></span></div>
@@ -508,11 +545,6 @@
           <div class="thumb"><img src="https://res.cloudinary.com/dhqtiaubo/image/upload/f_auto,q_auto,w_500/v1785534757/go-pro_fpszmo.webp" alt="GoPro Hero 13 Black" loading="lazy"></div>
           <div class="body"><p class="lbl">Action Camera</p><p class="name">GoPro Hero 13 Black</p><p class="val">Purchase Price $425</p> <span class="item-cta">Purchase This Item <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></span></div>
         </a>
-        <div class="item-card sold">
-          <div class="thumb"><img src="https://res.cloudinary.com/dhqtiaubo/image/upload/f_auto,q_auto,w_500/v1785534755/YETI_Cooler_wmam9r.avif" alt="YETI Tundra 65 Hard Cooler" loading="lazy"></div>
-          <span class="sold-badge">Sold</span>
-          <div class="body"><p class="lbl">Outdoor</p><p class="name">YETI Tundra 65 Hard Cooler</p><p class="val">Purchase Price $450</p><p class="giv-purchaser">Donated by Bret Lawrence, Arthur J. Gallagher - Woodruff-Sawyer</p></div>
-        </div>
         <a class="item-card" href="https://www.unitedcontractors.org/event-registration/2026-advocacy-auction-donate" target="_blank" rel="noopener">
           <div class="thumb"><img src="https://res.cloudinary.com/dhqtiaubo/image/upload/f_auto,q_auto,w_500/v1785534755/Contour_Face_PDP_e4dxzb.webp" alt="Omnilux Contour Face Red Light Therapy Mask" loading="lazy"></div>
           <div class="body"><p class="lbl">Health</p><p class="name">Omnilux Contour Face Red Light Therapy Mask</p><p class="val">Purchase Price $450</p> <span class="item-cta">Purchase This Item <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></span></div>
@@ -533,11 +565,6 @@
           <div class="thumb"><img src="https://res.cloudinary.com/dhqtiaubo/image/upload/f_auto,q_auto,w_500/v1785534752/sonos_vyr5pw.avif" alt="Sonos Era 300 Smart Speaker" loading="lazy"></div>
           <div class="body"><p class="lbl">Audio</p><p class="name">Sonos Era 300 Smart Speaker</p><p class="val">Purchase Price $525</p> <span class="item-cta">Purchase This Item <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></span></div>
         </a>
-        <div class="item-card sold">
-          <div class="thumb"><img src="https://res.cloudinary.com/dhqtiaubo/image/upload/f_auto,q_auto,w_500/v1785534752/fire_pit_kfijfs.avif" alt="Solo Stove Summit 27&quot; Smokeless Fire Pit" loading="lazy"></div>
-          <span class="sold-badge">Sold</span>
-          <div class="body"><p class="lbl">Outdoor Living</p><p class="name">Solo Stove Summit 27&quot; Smokeless Fire Pit</p><p class="val">Purchase Price $600</p><p class="giv-purchaser">Donated by Kevin Ghilotti, Team Ghilotti, Inc.</p></div>
-        </div>
         <a class="item-card" href="https://www.unitedcontractors.org/event-registration/2026-advocacy-auction-donate" target="_blank" rel="noopener">
           <div class="thumb"><img src="https://res.cloudinary.com/dhqtiaubo/image/upload/f_auto,q_auto,w_500/v1785534751/airpods_max2_uu9uaa.jpg" alt="Apple AirPods Max 2" loading="lazy"></div>
           <div class="body"><p class="lbl">Audio</p><p class="name">Apple AirPods Max 2</p><p class="val">Purchase Price $625</p> <span class="item-cta">Purchase This Item <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></span></div>
@@ -576,11 +603,6 @@
           <div class="thumb"><img src="https://res.cloudinary.com/dhqtiaubo/image/upload/f_auto,q_auto,w_500/v1785534749/apple_watches_bml68p.jpg" alt="Apple Watch Ultra 3 - His &amp; Hers Set" loading="lazy"></div>
           <div class="body"><p class="lbl">Wearable Tech</p><p class="name">Apple Watch Ultra 3 - His &amp; Hers Set</p><p class="val">Purchase Price $1,950</p> <span class="item-cta">Purchase This Item <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></span></div>
         </a>
-        <div class="item-card"><div class="thumb giv-ph"><i class="fa-solid fa-camera" aria-hidden="true"></i></div><div class="body"><p class="lbl">Photography</p><p class="name">Project Photoshoot</p><p class="val">Value $450</p><p class="giv-purchaser">Donated by Cathy Breslow, Breslow Imaging</p></div></div>
-        <div class="item-card"><div class="thumb giv-ph"><i class="fa-solid fa-bed" aria-hidden="true"></i></div><div class="body"><p class="lbl">Overnight Stay</p><p class="name">Bed and Breakfast Overnight at the Claremont Resort &amp; Club</p><p class="val">Value $790</p><p class="giv-purchaser">Donated by Denise Strasburg, Claremont Resort &amp; Club</p></div></div>
-        <div class="item-card"><div class="thumb giv-ph"><i class="fa-solid fa-hotel" aria-hidden="true"></i></div><div class="body"><p class="lbl">2-Night Stay</p><p class="name">2 Night Stay at the Ritz-Carlton, Laguna-Niguel</p><p class="val">Value $2,500</p><p class="giv-purchaser">Donated by The Ritz-Carlton Hotel Company</p></div></div>
-        <div class="item-card"><div class="thumb giv-ph"><i class="fa-solid fa-ticket" aria-hidden="true"></i></div><div class="body"><p class="lbl">VIP Tickets for 4</p><p class="name">Lakers vs Sacramento VIP Tickets for 4</p><p class="val">Value $1,200</p><p class="giv-purchaser">Donated by Sunshine Santos, JMH Engineering and Construction</p></div></div>
-        <div class="item-card"><div class="thumb giv-ph"><i class="fa-solid fa-hockey-puck" aria-hidden="true"></i></div><div class="body"><p class="lbl">VIP Tickets for 4</p><p class="name">Kings vs Edmonton VIP Tickets for 4</p><p class="val">Value $1,200</p><p class="giv-purchaser">Donated by Sunshine Santos, JMH Engineering and Construction</p></div></div>
       </div>
     </div>
   </section>
