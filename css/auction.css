@@ -569,3 +569,18 @@ footer{background:var(--teal);color:#B7B09C;padding:60px 0 28px;border-top:1px s
 .hero-soldout .hero-soldout-btns{margin-top:20px;}
 .hero-soldout strong{color:var(--lantern);letter-spacing:1px;}
 @media(max-width:560px){.soldout-bar{font-size:13.5px;padding:10px 14px;gap:8px;}.hero-soldout{padding:20px 16px 22px;}}
+
+/* AUCTION LOT CARDS + HOVER DESCRIPTION POP-OUT */
+.lot-card{cursor:pointer;outline:none;}
+.lot-card:hover,.lot-card:focus-visible,.lot-card.is-open{box-shadow:var(--shadow-sm);transform:translateY(-2px);z-index:2;}
+.lot-card:focus-visible{box-shadow:0 0 0 2px var(--gold),var(--shadow-sm);}
+.lot-card .lbl{display:inline-block;align-self:flex-start;background:var(--teal);color:var(--lantern);font-weight:800;letter-spacing:2px;padding:4px 11px;border-radius:2px;font-size:11px;}
+.lot-card .name{font-size:16px;}
+.lot-hint{display:inline-flex;align-items:center;gap:6px;margin-top:auto;padding-top:12px;font-family:var(--font-body);font-size:11.5px;font-weight:700;letter-spacing:1.4px;text-transform:uppercase;color:var(--teal);opacity:.75;}
+.lot-card:hover .lot-hint,.lot-card.is-open .lot-hint{color:var(--goldD);opacity:1;}
+.lot-pop{position:fixed;z-index:3000;display:none;width:380px;max-width:calc(100vw - 24px);max-height:calc(100vh - 24px);overflow:hidden;background:var(--teal);color:#E7E2D3;border:1px solid var(--lantern);border-radius:12px;box-shadow:0 18px 50px rgba(0,0,0,.45),0 0 28px rgba(199,166,91,.25);padding:20px 22px 18px;font-family:var(--font-body);font-size:14px;line-height:1.6;pointer-events:none;}
+.lot-pop h4{font-family:var(--font-head);font-size:17px;line-height:1.3;color:#fff;margin:0 0 4px;}
+.lot-pop .lot-pop-no{display:block;font-size:11px;font-weight:800;letter-spacing:2.2px;text-transform:uppercase;color:var(--lantern);margin-bottom:6px;}
+.lot-pop p{margin:10px 0 0;color:#E7E2D3;}
+.lot-pop .lot-thanks{color:var(--lantern);font-weight:600;font-size:13px;}
+@media(hover:none){.lot-pop{pointer-events:auto;}}

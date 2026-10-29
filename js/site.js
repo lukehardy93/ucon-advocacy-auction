@@ -187,3 +187,67 @@
     }
   });
 })();
+
+/* Auction lot cards: description pop-out on hover / focus / tap */
+(function () {
+  var cards = document.querySelectorAll(".lot-card");
+  if (!cards.length) return;
+  var pop = document.createElement("div");
+  pop.className = "lot-pop";
+  pop.setAttribute("role", "tooltip");
+  document.body.appendChild(pop);
+  var current = null;
+  function place(card) {
+    var vw = window.innerWidth, vh = window.innerHeight, gap = 14, m = 12;
+    var r = card.getBoundingClientRect();
+    var w = pop.offsetWidth, h = pop.offsetHeight, left, top;
+    if (r.right + gap + w <= vw - m) left = r.right + gap;
+    else if (r.left - gap - w >= m) left = r.left - gap - w;
+    else left = Math.max(m, Math.min(vw - w - m, r.left + r.width / 2 - w / 2));
+    top = Math.max(m, Math.min(vh - h - m, r.top));
+    if (left < r.right && left + w > r.left) {
+      top = r.bottom + gap + h <= vh - m ? r.bottom + gap : Math.max(m, r.top - gap - h);
+    }
+    pop.style.left = left + "px";
+    pop.style.top = top + "px";
+  }
+  function show(card) {
+    var d = card.querySelector(".lot-desc");
+    if (!d) return;
+    current = card;
+    var no = document.createElement("span");
+    no.className = "lot-pop-no";
+    no.textContent = "Lot " + card.getAttribute("data-lot");
+    var h = document.createElement("h4");
+    h.textContent = card.getAttribute("data-title");
+    pop.innerHTML = "";
+    pop.appendChild(no); pop.appendChild(h);
+    pop.insertAdjacentHTML("beforeend", d.innerHTML);
+    pop.style.display = "block";
+    card.classList.add("is-open");
+    place(card);
+  }
+  function hide() {
+    pop.style.display = "none";
+    if (current) current.classList.remove("is-open");
+    current = null;
+  }
+  var canHover = window.matchMedia && window.matchMedia("(hover: hover)").matches;
+  cards.forEach(function (card) {
+    if (canHover) {
+      card.addEventListener("mouseenter", function () { show(card); });
+      card.addEventListener("mouseleave", hide);
+    }
+    card.addEventListener("focus", function () { show(card); });
+    card.addEventListener("blur", hide);
+    card.addEventListener("click", function (e) {
+      if (canHover) return;
+      e.stopPropagation();
+      if (current === card) hide(); else { hide(); show(card); }
+    });
+  });
+  document.addEventListener("click", function () { if (!canHover) hide(); });
+  window.addEventListener("scroll", function () { if (current && canHover) hide(); }, { passive: true });
+  window.addEventListener("resize", hide);
+  document.addEventListener("keydown", function (e) { if (e.key === "Escape") hide(); });
+})();
