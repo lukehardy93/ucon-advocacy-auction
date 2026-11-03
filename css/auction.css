@@ -584,3 +584,6 @@ footer{background:var(--teal);color:#B7B09C;padding:60px 0 28px;border-top:1px s
 .lot-pop p{margin:10px 0 0;color:#E7E2D3;}
 .lot-pop .lot-thanks{color:var(--lantern);font-weight:600;font-size:13px;}
 @media(hover:none){.lot-pop{pointer-events:auto;}}
+
+.lot-pop ul{margin:8px 0 0;padding-left:18px;}
+.lot-pop li{margin:4px 0;}
