@@ -40,8 +40,14 @@
 .imp-video-frame i{font-size:40px;color:var(--lantern);opacity:.8;}
 .imp-video-frame p{color:#D9D3C4;font-size:15px;max-width:380px;text-align:center;margin:0;}
 .imp-video-frame iframe,.imp-video-frame video{position:absolute;inset:0;width:100%;height:100%;border:0;object-fit:cover;}
-.imp-hr-grid{display:flex;flex-wrap:wrap;margin-top:32px;border-top:1px solid var(--line);border-left:1px solid var(--line);}
-.imp-hr-card{background:var(--paper);padding:24px 22px;flex:1 1 260px;border-right:1px solid var(--line);border-bottom:1px solid var(--line);}
+.imp-hr-grid{display:grid;grid-template-columns:repeat(6,1fr);margin-top:32px;border-top:1px solid var(--line);border-left:1px solid var(--line);}
+.imp-hr-card{background:var(--paper);padding:24px 22px;grid-column:span 2;border-right:1px solid var(--line);border-bottom:1px solid var(--line);}
+.imp-hr-card.top{grid-column:span 3;padding:44px 28px;text-align:center;background:var(--goldL);}
+.imp-hr-card.top .imp-hr-name{font-size:28px;}
+.imp-hr-card.top .imp-hr-company{font-size:16px;margin-top:6px;}
+.imp-hr-card.top .imp-hr-amt{font-size:30px;margin-top:16px;}
+@media(max-width:900px){.imp-hr-card{grid-column:span 3;}.imp-hr-card.top{grid-column:span 6;}}
+@media(max-width:560px){.imp-hr-card,.imp-hr-card.top{grid-column:span 6;}}
 .imp-hr-name{font-family:var(--font-head);font-size:17px;font-weight:700;color:var(--ink);}
 .imp-hr-company{font-family:var(--font-body);font-size:13px;color:var(--ink2);margin-top:3px;}
 .imp-hr-amt{font-family:var(--font-head);font-size:15px;font-weight:700;color:var(--goldD);margin-top:12px;}
@@ -403,12 +409,12 @@
       <h2 class="section-title">2025 High Rollers Recognition</h2>
       <p class="section-sub">A special thank-you to the members, sponsors, and bidders whose generosity led the way at the 2025 Advocacy Auction &mdash; recognizing everyone who gave more than $10,000 over the course of the night.</p>
       <div class="imp-hr-grid">
-        <div class="imp-hr-card">
+        <div class="imp-hr-card top">
           <div class="imp-hr-name">Matt Mascaro</div>
           <div class="imp-hr-company">Gallagher &amp; Burk, Inc.</div>
           <div class="imp-hr-amt">$22,500</div>
         </div>
-        <div class="imp-hr-card">
+        <div class="imp-hr-card top">
           <div class="imp-hr-name">Rob Bilotti</div>
           <div class="imp-hr-company">Chrisp Company</div>
           <div class="imp-hr-amt">$22,500</div>
