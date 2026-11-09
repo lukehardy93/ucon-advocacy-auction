@@ -176,6 +176,14 @@
   document.querySelectorAll(".photo-belt-track").forEach(function (track) {
     var originals = Array.prototype.slice.call(track.children);
     if (!originals.length) return;
+    /* Optional: data-shuffle on the track randomizes photo order on every page load. */
+    if (track.hasAttribute("data-shuffle")) {
+      for (var i = originals.length - 1; i > 0; i--) {
+        var r = Math.floor(Math.random() * (i + 1));
+        var tmp = originals[i]; originals[i] = originals[r]; originals[r] = tmp;
+      }
+      originals.forEach(function (item) { track.appendChild(item); });
+    }
     for (var copy = 0; copy < 3; copy++) {
       originals.forEach(function (item) {
         var clone = item.cloneNode(true);
